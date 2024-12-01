@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RCC>
+  <qresource prefix="/">
+    <file>assets/fst.jpeg</file>
+    <file>assets/user.png</file>
+    <file>assets/useradminlogo.png</file>
+    <file>assets/padlock.png</file>
+    <file>assets/master.png</file>
+    <file>assets/cycle.png</file>
+    <file>assets/licence.png</file>
+  </qresource>
+</RCC>

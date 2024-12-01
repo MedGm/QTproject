@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SelectionWindow</class>
+ <widget class="QMainWindow" name="SelectionWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1000</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Selection des Formations</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-image: url(:/assets/fst.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+QWidget#centralwidget {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                               stop:0 rgba(0, 123, 255, 0.35),
+                               stop:1 rgba(0, 123, 255, 0.3));
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="headerLabel">
+      <property name="styleSheet">
+       <string notr="true">font-size: 24px;
+font-weight: bold;
+color: white;
+background-color: transparent;
+padding: 20px;
+border-radius: 10px;
+font-family: 'Roboto', sans-serif;</string>
+      </property>
+      <property name="text">
+       <string>Sélectionnez une Formation</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <property name="spacing">
+       <number>30</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="masterButton">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>250</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    border: none;
+    border-radius: 15px;
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                               stop:0 #1a88e8, stop:1 #0f6fc5);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+QPushButton:hover {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                               stop:0 #1576cc, stop:1 #0d5aa3);
+}
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                               stop:0 #0d5aa3, stop:1 #0b4c8c);
+}</string>
+        </property>
+        <property name="text">
+         <string>Master en Sciences
+et Techniques</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="licenceButton">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>250</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    border: none;
+    border-radius: 15px;
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                               stop:0 #34c759, stop:1 #28a745);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+QPushButton:hover {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                               stop:0 #2cb64e, stop:1 #218838);
+}
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                               stop:0 #218838, stop:1 #1e7e34);
+}</string>
+        </property>
+        <property name="text">
+         <string>Licence en Sciences
+et Techniques</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="engineerButton">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>250</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    border: none;
+    border-radius: 15px;
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                               stop:0 #e74c3c, stop:1 #dc3545);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding-bottom: 20px;
+}
+QPushButton:hover {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                               stop:0 #d44637, stop:1 #c82333);
+}
+QPushButton:pressed {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1,
+                               stop:0 #c82333, stop:1 #bd2130);
+}</string>
+        </property>
+        <property name="text">
+         <string>Cycle d'Ingénieur</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
