@@ -9,26 +9,28 @@ set(CMAKE_AUTORCC ON)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Sql)
 
 set(PROJECT_SOURCES
     main.cpp
-    mainwindow.cpp
-    mainwindow.h
-    mainwindow.ui
+    mainwindow.cpp mainwindow.h mainwindow.ui
+    logindialog.cpp logindialog.h logindialog.ui
+    selectionwindow.cpp selectionwindow.h selectionwindow.ui
+    cyclemanagement.cpp cyclemanagement.h cyclemanagement.ui
+    databasemanager.cpp databasemanager.h
+    studentdialog.cpp studentdialog.h
     assets.qrc
 )
 
 qt_add_executable(Gestion_de_Departement_GI
     ${PROJECT_SOURCES}
-    logindialog.cpp logindialog.h logindialog.ui
-    selectionwindow.cpp selectionwindow.h selectionwindow.ui
 )
 
 target_link_libraries(Gestion_de_Departement_GI PRIVATE
     Qt6::Core
     Qt6::Gui
     Qt6::Widgets
+    Qt6::Sql
 )
 
 set_target_properties(Gestion_de_Departement_GI PROPERTIES

@@ -10,6 +10,7 @@ SelectionWindow::SelectionWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setupIcons();
+    connect(ui->engineerButton, &QPushButton::clicked, this, &SelectionWindow::onEngineerButtonClicked);
 }
 
 SelectionWindow::~SelectionWindow()
@@ -53,4 +54,11 @@ void SelectionWindow::setupIcons()
         shadow->setOffset(0, 4);
         button->setGraphicsEffect(shadow);
     }
+}
+
+void SelectionWindow::onEngineerButtonClicked()
+{
+    cyclemanagement *cycleWindow = new cyclemanagement(this);
+    cycleWindow->show();
+    this->hide();
 }

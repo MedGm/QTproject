@@ -303,6 +303,9 @@ Gestion_de_Departement_GI_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Gestion_de_Departement_GI_SOURCE_DIR:STATIC=C:/Users/moonx/Documents/Gestion_de_Departement_GI
 
+//The directory containing a CMake configuration file for MySQL.
+MySQL_DIR:PATH=MySQL_DIR-NOTFOUND
+
 //Additional directories where find(Qt6 ...) host Qt components
 // are searched
 QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH:STRING=
@@ -333,6 +336,9 @@ Qt6GuiTools_DIR:PATH=D:/Qt/6.8.0/mingw_64/lib/cmake/Qt6GuiTools
 
 //The directory containing a CMake configuration file for Qt6Gui.
 Qt6Gui_DIR:PATH=D:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Gui
+
+//The directory containing a CMake configuration file for Qt6Sql.
+Qt6Sql_DIR:PATH=D:/Qt/6.8.0/mingw_64/lib/cmake/Qt6Sql
 
 //The directory containing a CMake configuration file for Qt6WidgetsTools.
 Qt6WidgetsTools_DIR:PATH=D:/Qt/6.8.0/mingw_64/lib/cmake/Qt6WidgetsTools
@@ -1082,6 +1088,8 @@ QT_FEATURE_splashscreen:INTERNAL=ON
 QT_FEATURE_splitter:INTERNAL=ON
 //Qt feature: sql (from target Qt6::Core)
 QT_FEATURE_sql:INTERNAL=ON
+//Qt feature: sqlmodel (from target Qt6::Sql)
+QT_FEATURE_sqlmodel:INTERNAL=ON
 //Qt feature: sse2 (from target Qt6::Core)
 QT_FEATURE_sse2:INTERNAL=ON
 //Qt feature: sse3 (from target Qt6::Core)
