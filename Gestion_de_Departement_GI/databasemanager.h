@@ -14,11 +14,13 @@ public:
     bool initDatabase();
     bool addStudent(const QString& level, const QString& name, const QString& cne, const QString& cin);
     bool addProfessor(const QString& name, const QString& cin, const QString& speciality);
-    bool addInternship(const QString& studentCne, const QString& company, const QString& subject);
+    bool addInternship(const QString& studentName, const QString& studentCne, 
+                      const QString& company, const QString& subject);
     bool removeStudent(const QString& level, const QString& cne);
     bool removeProfessor(const QString& cin);
     bool removeInternship(int id);
     QSqlDatabase getDatabase() const;
+    int getInternshipId(const QString& studentCne, const QString& company);
 
 private:
     DatabaseManager();

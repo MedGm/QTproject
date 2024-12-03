@@ -74,12 +74,16 @@ bool DatabaseManager::createTables()
         return false;
     }
 
-    // Create Internships table
+    // Create Internships table with corrected columns
     if (!query.exec("CREATE TABLE IF NOT EXISTS Internships ("
                    "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                   "student_name TEXT NOT NULL,"
                    "student_cne TEXT NOT NULL,"
                    "company TEXT NOT NULL,"
-                   "subject TEXT NOT NULL)")) {
+                   "subject TEXT NOT NULL,"
+                   "FOREIGN KEY (student_cne) REFERENCES LSI1(cne) ON DELETE CASCADE,"
+                   "FOREIGN KEY (student_cne) REFERENCES LSI2(cne) ON DELETE CASCADE,"
+                   "FOREIGN KEY (student_cne) REFERENCES LSI3(cne) ON DELETE CASCADE)")) {
         qDebug() << "Error creating Internships table:" << query.lastError();
         return false;
     }
@@ -131,6 +135,39 @@ bool DatabaseManager::addProfessor(const QString& name, const QString& cin, cons
     query.addBindValue(speciality);
     
     return query.exec();
+}
+
+bool DatabaseManager::addInternship(const QString& studentName, const QString& studentCne, 
+                                  const QString& company, const QString& subject)
+{
+    QSqlQuery query;
+    query.prepare("INSERT INTO Internships (student_name, student_cne, company, subject) "
+                 "VALUES (?, ?, ?, ?)");
+    query.addBindValue(studentName);
+    query.addBindValue(studentCne);
+    query.addBindValue(company);
+    query.addBindValue(subject);
+    
+    bool success = query.exec();
+    if (!success) {
+        qDebug() << "Error adding internship:" << query.lastError().text()
+                 << "\nQuery:" << query.lastQuery()
+                 << "\nValues:" << studentName << studentCne << company << subject;
+    }
+    return success;
+}
+
+int DatabaseManager::getInternshipId(const QString& studentCne, const QString& company)
+{
+    QSqlQuery query;
+    query.prepare("SELECT id FROM Internships WHERE student_cne = ? AND company = ?");
+    query.addBindValue(studentCne);
+    query.addBindValue(company);
+    
+    if (query.exec() && query.next()) {
+        return query.value(0).toInt();
+    }
+    return -1;
 }
 
 QSqlDatabase DatabaseManager::getDatabase() const

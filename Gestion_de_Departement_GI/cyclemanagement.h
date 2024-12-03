@@ -41,6 +41,10 @@ private slots:
     void onStudentsButtonClicked();
     void onAddProfessorClicked();
     void onDeleteProfessorClicked();
+    void onInternshipsButtonClicked();
+    void onAddInternshipClicked();
+    void onDeleteInternshipClicked();
+    
 
 private:
     Ui::cyclemanagement *ui;
@@ -59,6 +63,9 @@ private:
     QWidget* pageWidget;  // Add this line to store the students page widget
     QWidget* professorsPageWidget;  // Add this line
     QWidget* schedulePageWidget;  // Add this line
+    QWidget* internshipsPageWidget;
+    QTableWidget* internshipsTable;
+    void setupInternshipsTable();
 };
 
 #endif // CYCLEMANAGEMENT_H
