@@ -121,9 +121,9 @@ QPushButton#logoutButton:hover {
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="requestsButton">
+        <widget class="QPushButton" name="demandsButton">
          <property name="text">
-          <string>Les demandes</string>
+          <string>Demandes</string>
          </property>
         </widget>
        </item>
@@ -133,6 +133,28 @@ QPushButton#logoutButton:hover {
           <enum>Qt::Vertical</enum>
          </property>
         </spacer>
+       </item>
+       <item>
+        <widget class="QLabel" name="logoLabel">
+         <property name="minimumSize">
+          <size>
+           <width>2200</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>2400</width>
+           <height>100</height>
+          </size>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
        </item>
        <item>
         <widget class="QPushButton" name="logoutButton">

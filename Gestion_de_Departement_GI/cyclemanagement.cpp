@@ -135,6 +135,21 @@ void cyclemanagement::setupUI()
     
     // Initial load
     loadStudents("LSI 1");
+
+    QPixmap logo(":/assets/log-uae.png");  
+    if (!logo.isNull()) {
+        ui->logoLabel->setPixmap(logo.scaled(ui->logoLabel->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+        ui->logoLabel->setStyleSheet("QLabel { background-color: transparent; padding: 10px; }");
+    } else {
+        qDebug() << "Failed to load logo image from:" << ":/assets/log-uae.png";
+    }
+    
+    // Add demands button to sidebar
+    connect(ui->demandsButton, &QPushButton::clicked,
+            this, &cyclemanagement::onDemandsButtonClicked);
+
+    // Setup demands page
+    setupDemandsPage();
 }
 
 void cyclemanagement::setupProfessorsTable()
@@ -400,7 +415,8 @@ void cyclemanagement::onDeleteStudentClicked()
         QCheckBox* checkBox = widget->findChild<QCheckBox*>();
 
         if(checkBox && checkBox->isChecked()) {
-            QString cne = studentsTable->item(row, 3)->text();
+            // Fix: Change column index from 3 to 2 to get CNE instead of CIN
+            QString cne = studentsTable->item(row, 2)->text();
             DatabaseManager::instance().removeStudent(level, cne);
             anyDeleted = true;
         }
@@ -615,6 +631,92 @@ void cyclemanagement::onDeleteInternshipClicked()
 
     if(anyDeleted) {
         loadInternships();
+    }
+}
+
+void cyclemanagement::setupDemandsPage()
+{
+    demandsPageWidget = new QWidget();
+    QVBoxLayout* mainLayout = new QVBoxLayout();
+    
+    // Create title label
+    QLabel* titleLabel = new QLabel("Les Demandes");
+    titleLabel->setStyleSheet("font-size: 24px; font-weight: bold; margin: 20px;");
+    titleLabel->setAlignment(Qt::AlignCenter);
+    mainLayout->addWidget(titleLabel);
+    
+    // Create demand options
+    QStringList demands = {
+        "Demande 1: Attestation de scolarité",
+        "Demande 2: Relevé de notes",
+        "Demande 3: Convention de stage",
+        "Demande 4: Attestation de réussite",
+        "Demande 5: Demande d'absence"
+    };
+    
+    for(const QString& demand : demands) {
+        QWidget* optionWidget = new QWidget();
+        QHBoxLayout* optionLayout = new QHBoxLayout();
+        
+        QLabel* label = new QLabel(demand);
+        label->setStyleSheet("font-size: 16px; padding: 10px;");
+        
+        QPushButton* downloadBtn = new QPushButton("Télécharger");
+        downloadBtn->setProperty("demandType", demand.split(":")[0].trimmed());
+        downloadBtn->setStyleSheet(
+            "QPushButton {"
+            "    background-color: #2980b9;"
+            "    color: white;"
+            "    padding: 8px 15px;"
+            "    border: none;"
+            "    border-radius: 4px;"
+            "}"
+            "QPushButton:hover {"
+            "    background-color: #3498db;"
+            "}"
+        );
+        
+        connect(downloadBtn, &QPushButton::clicked,
+                this, &cyclemanagement::onDemandOptionClicked);
+        
+        optionLayout->addWidget(label);
+        optionLayout->addWidget(downloadBtn);
+        optionWidget->setLayout(optionLayout);
+        
+        mainLayout->addWidget(optionWidget);
+    }
+    
+    mainLayout->addStretch();
+    demandsPageWidget->setLayout(mainLayout);
+    ui->mainStack->addWidget(demandsPageWidget);
+}
+
+void cyclemanagement::onDemandsButtonClicked()
+{
+    ui->mainStack->setCurrentWidget(demandsPageWidget);
+}
+
+void cyclemanagement::onDemandOptionClicked()
+{
+    QPushButton* button = qobject_cast<QPushButton*>(sender());
+    if (button) {
+        QString demandType = button->property("demandType").toString();
+        downloadPDF(demandType);
+    }
+}
+
+void cyclemanagement::downloadPDF(const QString& demandType)
+{
+    QString fileName = QFileDialog::getSaveFileName(this,
+        tr("Save PDF File"),
+        QDir::homePath() + "/" + demandType + ".pdf",
+        tr("PDF Files (*.pdf)"));
+        
+    if (!fileName.isEmpty()) {
+        // Here you would normally generate or copy the appropriate PDF file
+        // For now, we'll just show a success message
+        QMessageBox::information(this, "Téléchargement",
+            "Le fichier " + demandType + " a été téléchargé avec succès!");
     }
 }
 

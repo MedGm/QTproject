@@ -14,6 +14,8 @@
 #include <QResizeEvent>
 #include "databasemanager.h"
 #include <QCheckBox>
+#include <QFileDialog>
+#include <QDir>
 
 namespace Ui {
 class cyclemanagement;
@@ -44,7 +46,8 @@ private slots:
     void onInternshipsButtonClicked();
     void onAddInternshipClicked();
     void onDeleteInternshipClicked();
-    
+    void onDemandsButtonClicked();
+    void onDemandOptionClicked();
 
 private:
     Ui::cyclemanagement *ui;
@@ -66,6 +69,9 @@ private:
     QWidget* internshipsPageWidget;
     QTableWidget* internshipsTable;
     void setupInternshipsTable();
+    QWidget* demandsPageWidget;
+    void setupDemandsPage();
+    void downloadPDF(const QString& demandType);
 };
 
 #endif // CYCLEMANAGEMENT_H
