@@ -113,6 +113,22 @@ build CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.obj: CXX_COMPIL
   OBJECT_DIR = CMakeFiles\Gestion_de_Departement_GI.dir
   OBJECT_FILE_DIR = CMakeFiles\Gestion_de_Departement_GI.dir
 
+build CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.obj: CXX_COMPILER__Gestion_de_Departement_GI_unscanned_Debug C$:/Users/moonx/Documents/Gestion_de_Departement_GI/demandswindow.cpp || cmake_object_order_depends_target_Gestion_de_Departement_GI
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Gestion_de_Departement_GI.dir\demandswindow.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen/include -isystem D:/Qt/6.8.0/mingw_64/include/QtCore -isystem D:/Qt/6.8.0/mingw_64/include -isystem D:/Qt/6.8.0/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/6.8.0/mingw_64/include/QtGui -isystem D:/Qt/6.8.0/mingw_64/include/QtWidgets -isystem D:/Qt/6.8.0/mingw_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\Gestion_de_Departement_GI.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gestion_de_Departement_GI.dir
+
+build CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.obj: CXX_COMPILER__Gestion_de_Departement_GI_unscanned_Debug C$:/Users/moonx/Documents/Gestion_de_Departement_GI/professorswindow.cpp || cmake_object_order_depends_target_Gestion_de_Departement_GI
+  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
+  DEP_FILE = CMakeFiles\Gestion_de_Departement_GI.dir\professorswindow.cpp.obj.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen/include -isystem D:/Qt/6.8.0/mingw_64/include/QtCore -isystem D:/Qt/6.8.0/mingw_64/include -isystem D:/Qt/6.8.0/mingw_64/mkspecs/win32-g++ -isystem D:/Qt/6.8.0/mingw_64/include/QtGui -isystem D:/Qt/6.8.0/mingw_64/include/QtWidgets -isystem D:/Qt/6.8.0/mingw_64/include/QtSql
+  OBJECT_DIR = CMakeFiles\Gestion_de_Departement_GI.dir
+  OBJECT_FILE_DIR = CMakeFiles\Gestion_de_Departement_GI.dir
+
 build CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.obj: CXX_COMPILER__Gestion_de_Departement_GI_unscanned_Debug C$:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp || cmake_object_order_depends_target_Gestion_de_Departement_GI
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_SQL_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\Gestion_de_Departement_GI.dir\Gestion_de_Departement_GI_autogen\EWIEGA46WW\qrc_assets.cpp.obj.d
@@ -129,7 +145,7 @@ build CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen
 #############################################
 # Link the executable Gestion_de_Departement_GI.exe
 
-build Gestion_de_Departement_GI.exe: CXX_EXECUTABLE_LINKER__Gestion_de_Departement_GI_Debug CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.obj | D$:/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a D$:/Qt/6.8.0/mingw_64/lib/libQt6Sql.a D$:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a D$:/Qt/6.8.0/mingw_64/lib/libQt6Core.a D$:/Qt/6.8.0/mingw_64/lib/libQt6EntryPoint.a || Gestion_de_Departement_GI_autogen Gestion_de_Departement_GI_autogen_timestamp_deps
+build Gestion_de_Departement_GI.exe: CXX_EXECUTABLE_LINKER__Gestion_de_Departement_GI_Debug CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.obj CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.obj | D$:/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a D$:/Qt/6.8.0/mingw_64/lib/libQt6Sql.a D$:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a D$:/Qt/6.8.0/mingw_64/lib/libQt6Core.a D$:/Qt/6.8.0/mingw_64/lib/libQt6EntryPoint.a || Gestion_de_Departement_GI_autogen Gestion_de_Departement_GI_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = D:/Qt/6.8.0/mingw_64/lib/libQt6Widgets.a  D:/Qt/6.8.0/mingw_64/lib/libQt6Sql.a  D:/Qt/6.8.0/mingw_64/lib/libQt6Gui.a  -ld3d11  -ldxgi  -ldxguid  -ld3d12  D:/Qt/6.8.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  D:/Qt/6.8.0/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32

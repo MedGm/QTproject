@@ -264,6 +264,12 @@
 			null
 		],
 		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/demandswindow.h",
+			"MU",
+			"EWIEGA46WW/moc_demandswindow.cpp",
+			null
+		],
+		[
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/logindialog.h",
 			"MU",
 			"EWIEGA46WW/moc_logindialog.cpp",
@@ -273,6 +279,12 @@
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/professorswindow.h",
+			"MU",
+			"EWIEGA46WW/moc_professorswindow.cpp",
 			null
 		],
 		[
@@ -372,6 +384,11 @@
 			null
 		],
 		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/demandswindow.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/logindialog.cpp",
 			"MU",
 			null
@@ -383,6 +400,11 @@
 		],
 		[
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/professorswindow.cpp",
 			"MU",
 			null
 		],

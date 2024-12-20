@@ -3,6 +3,11 @@
 #include <QPainter>
 #include <QVBoxLayout>
 #include <QGraphicsEffect>
+#include <QLineEdit>
+#include <QFormLayout>
+#include <QCheckBox>
+#include <QFileDialog>
+#include <QMessageBox>
 
 SelectionWindow::SelectionWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -10,7 +15,14 @@ SelectionWindow::SelectionWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setupIcons();
+    
+    // Connect buttons
     connect(ui->engineerButton, &QPushButton::clicked, this, &SelectionWindow::onEngineerButtonClicked);
+    connect(ui->professorsButton, &QPushButton::clicked, this, &SelectionWindow::onProfessorsButtonClicked);
+    connect(ui->demandsButton, &QPushButton::clicked, this, &SelectionWindow::onDemandsButtonClicked);
+    
+    professorsWindow = nullptr;
+    demandsWindow = nullptr;
 }
 
 SelectionWindow::~SelectionWindow()
@@ -61,4 +73,20 @@ void SelectionWindow::onEngineerButtonClicked()
     cyclemanagement *cycleWindow = new cyclemanagement(this);
     cycleWindow->show();
     this->hide();
+}
+
+void SelectionWindow::onProfessorsButtonClicked()
+{
+    if (!professorsWindow) {
+        professorsWindow = new ProfessorsWindow(this);
+    }
+    professorsWindow->show();
+}
+
+void SelectionWindow::onDemandsButtonClicked()
+{
+    if (!demandsWindow) {
+        demandsWindow = new DemandsWindow(this);
+    }
+    demandsWindow->show();
 }
