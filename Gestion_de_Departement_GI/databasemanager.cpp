@@ -34,7 +34,7 @@ bool DatabaseManager::createTables()
 {
     QSqlQuery query;
     
-    // Create LSI1 table
+    // creer LSI1
     if (!query.exec("CREATE TABLE IF NOT EXISTS LSI1 ("
                    "id INTEGER PRIMARY KEY AUTOINCREMENT,"
                    "name TEXT NOT NULL,"
@@ -44,7 +44,7 @@ bool DatabaseManager::createTables()
         return false;
     }
 
-    // Create LSI2 table
+    // creer LSI2
     if (!query.exec("CREATE TABLE IF NOT EXISTS LSI2 ("
                    "id INTEGER PRIMARY KEY AUTOINCREMENT,"
                    "name TEXT NOT NULL,"

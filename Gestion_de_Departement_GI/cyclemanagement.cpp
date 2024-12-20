@@ -33,10 +33,10 @@ void cyclemanagement::onStudentsButtonClicked()
 
 void cyclemanagement::setupUI()
 {
-    // Setup level combo box
+    // cycle LSI
     ui->levelComboBox->addItems({"LSI 1", "LSI 2", "LSI 3"});
 
-    // Setup students table
+    // initialisation de table dyal étudiants
     studentsTable = new QTableWidget(this);
     studentsTable->setColumnCount(4);
     studentsTable->setHorizontalHeaderLabels({"Sélection", "Nom", "CNE", "CIN"});
@@ -106,11 +106,7 @@ void cyclemanagement::setupUI()
     connect(deleteButton, &QPushButton::clicked, this, &cyclemanagement::onDeleteStudentClicked);
 
     // Connect sidebar buttons
-    connect(ui->professorsButton, &QPushButton::clicked, this, &cyclemanagement::onProfessorsButtonClicked);
     connect(ui->scheduleButton, &QPushButton::clicked, this, &cyclemanagement::onScheduleButtonClicked);
-    
-    // Setup professors table
-    setupProfessorsTable();
     
     // Setup schedule page
     scheduleLabel = new QLabel(this);
@@ -138,160 +134,25 @@ void cyclemanagement::setupUI()
 
     QPixmap logo(":/assets/log-uae.png");  
     if (!logo.isNull()) {
-        ui->logoLabel->setPixmap(logo.scaled(ui->logoLabel->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
-        ui->logoLabel->setStyleSheet("QLabel { background-color: transparent; padding: 10px; }");
+        // Calculate the actual size to maintain aspect ratio within the label bounds
+        QSize labelSize = ui->logoLabel->size();
+        QSize scaledSize = logo.size().scaled(labelSize, Qt::KeepAspectRatio);
+        
+        // Add some padding to ensure the logo doesn't touch the edges
+        int horizontalPadding = 10;
+        int verticalPadding = 5;
+        scaledSize.setWidth(scaledSize.width() - 2 * horizontalPadding);
+        scaledSize.setHeight(scaledSize.height() - 2 * verticalPadding);
+        
+        // Scale the logo and set it to the label
+        QPixmap scaledLogo = logo.scaled(scaledSize, 
+                                       Qt::KeepAspectRatio, 
+                                       Qt::SmoothTransformation);
+        
+        ui->logoLabel->setPixmap(scaledLogo);
     } else {
         qDebug() << "Failed to load logo image from:" << ":/assets/log-uae.png";
     }
-    
-    // Add demands button to sidebar
-    connect(ui->demandsButton, &QPushButton::clicked,
-            this, &cyclemanagement::onDemandsButtonClicked);
-
-    // Setup demands page
-    setupDemandsPage();
-}
-
-void cyclemanagement::setupProfessorsTable()
-{
-    professorsTable = new QTableWidget(this);
-    professorsTable->setColumnCount(4);  // Changed to 4 to include checkbox
-    professorsTable->setHorizontalHeaderLabels({"Sélection", "Nom", "CIN", "Spécialité"});
-    
-    // Set column widths
-    professorsTable->setColumnWidth(0, 70);  // Checkbox column
-    professorsTable->setColumnWidth(1, 250); // Name column
-    professorsTable->setColumnWidth(2, 150); // CIN column
-    professorsTable->setColumnWidth(3, 200); // Speciality column
-    
-    // Apply the same styling as students table
-    professorsTable->setStyleSheet(studentsTable->styleSheet());
-    professorsTable->setAlternatingRowColors(true);
-    professorsTable->setSelectionBehavior(QAbstractItemView::SelectRows);
-    professorsTable->verticalHeader()->setVisible(false);
-    professorsTable->setShowGrid(false);
-    professorsTable->setEditTriggers(QAbstractItemView::NoEditTriggers);
-
-    // Setup buttons
-    QPushButton* addButton = new QPushButton("Ajouter", this);
-    QPushButton* deleteButton = new QPushButton("Supprimer Sélection", this);
-
-    // Create button layout
-    QHBoxLayout* buttonLayout = new QHBoxLayout();
-    buttonLayout->addWidget(addButton);
-    buttonLayout->addWidget(deleteButton);
-    buttonLayout->addStretch();
-
-    // Create container widget for buttons
-    QWidget* buttonContainer = new QWidget();
-    buttonContainer->setLayout(buttonLayout);
-
-    // Create main layout
-    QVBoxLayout* mainLayout = new QVBoxLayout();
-    mainLayout->addWidget(buttonContainer);
-    mainLayout->addWidget(professorsTable);
-
-    // Create container widget for the page
-    professorsPageWidget = new QWidget();
-    professorsPageWidget->setLayout(mainLayout);
-
-    // Connect buttons
-    connect(addButton, &QPushButton::clicked, this, &cyclemanagement::onAddProfessorClicked);
-    connect(deleteButton, &QPushButton::clicked, this, &cyclemanagement::onDeleteProfessorClicked);
-    
-    ui->mainStack->addWidget(professorsPageWidget);
-}
-
-void cyclemanagement::loadProfessors()
-{
-    QSqlQuery query(DatabaseManager::instance().getDatabase());
-    query.exec("SELECT * FROM Professors");
-    
-    professorsTable->setRowCount(0);
-    int row = 0;
-    
-    while (query.next()) {
-        professorsTable->insertRow(row);
-
-        // Add checkbox
-        QWidget* checkBoxWidget = new QWidget();
-        QCheckBox* checkBox = new QCheckBox();
-        QHBoxLayout* layout = new QHBoxLayout(checkBoxWidget);
-        layout->addWidget(checkBox);
-        layout->setAlignment(Qt::AlignCenter);
-        layout->setContentsMargins(0, 0, 0, 0);
-        checkBoxWidget->setLayout(layout);
-        professorsTable->setCellWidget(row, 0, checkBoxWidget);
-
-        // Add other items
-        professorsTable->setItem(row, 1, new QTableWidgetItem(query.value("name").toString()));
-        professorsTable->setItem(row, 2, new QTableWidgetItem(query.value("cin").toString()));
-        professorsTable->setItem(row, 3, new QTableWidgetItem(query.value("speciality").toString()));
-        professorsTable->setRowHeight(row, 35);
-        row++;
-    }
-}
-
-void cyclemanagement::onAddProfessorClicked()
-{
-    QDialog dialog(this);
-    dialog.setWindowTitle("Ajouter Professeur");
-
-    QLineEdit* nameEdit = new QLineEdit(&dialog);
-    QLineEdit* cinEdit = new QLineEdit(&dialog);
-    QLineEdit* specialityEdit = new QLineEdit(&dialog);
-    QPushButton* okButton = new QPushButton("OK", &dialog);
-    QPushButton* cancelButton = new QPushButton("Annuler", &dialog);
-
-    QFormLayout* formLayout = new QFormLayout;
-    formLayout->addRow("Nom:", nameEdit);
-    formLayout->addRow("CIN:", cinEdit);
-    formLayout->addRow("Spécialité:", specialityEdit);
-
-    QHBoxLayout* buttonLayout = new QHBoxLayout;
-    buttonLayout->addWidget(okButton);
-    buttonLayout->addWidget(cancelButton);
-    formLayout->addRow(buttonLayout);
-
-    dialog.setLayout(formLayout);
-
-    connect(okButton, &QPushButton::clicked, &dialog, &QDialog::accept);
-    connect(cancelButton, &QPushButton::clicked, &dialog, &QDialog::reject);
-
-    if (dialog.exec() == QDialog::Accepted) {
-        DatabaseManager::instance().addProfessor(
-            nameEdit->text(),
-            cinEdit->text(),
-            specialityEdit->text()
-        );
-        loadProfessors();
-    }
-}
-
-void cyclemanagement::onDeleteProfessorClicked()
-{
-    bool anyDeleted = false;
-
-    for(int row = professorsTable->rowCount() - 1; row >= 0; row--) {
-        QWidget* widget = professorsTable->cellWidget(row, 0);
-        QCheckBox* checkBox = widget->findChild<QCheckBox*>();
-
-        if(checkBox && checkBox->isChecked()) {
-            QString cin = professorsTable->item(row, 2)->text();
-            DatabaseManager::instance().removeProfessor(cin);
-            anyDeleted = true;
-        }
-    }
-
-    if(anyDeleted) {
-        loadProfessors();
-    }
-}
-
-void cyclemanagement::onProfessorsButtonClicked()
-{
-    loadProfessors();
-    ui->mainStack->setCurrentWidget(professorsPageWidget);
 }
 
 void cyclemanagement::onScheduleButtonClicked()
@@ -631,92 +492,6 @@ void cyclemanagement::onDeleteInternshipClicked()
 
     if(anyDeleted) {
         loadInternships();
-    }
-}
-
-void cyclemanagement::setupDemandsPage()
-{
-    demandsPageWidget = new QWidget();
-    QVBoxLayout* mainLayout = new QVBoxLayout();
-    
-    // Create title label
-    QLabel* titleLabel = new QLabel("Les Demandes");
-    titleLabel->setStyleSheet("font-size: 24px; font-weight: bold; margin: 20px;");
-    titleLabel->setAlignment(Qt::AlignCenter);
-    mainLayout->addWidget(titleLabel);
-    
-    // Create demand options
-    QStringList demands = {
-        "Demande 1: Attestation de scolarité",
-        "Demande 2: Relevé de notes",
-        "Demande 3: Convention de stage",
-        "Demande 4: Attestation de réussite",
-        "Demande 5: Demande d'absence"
-    };
-    
-    for(const QString& demand : demands) {
-        QWidget* optionWidget = new QWidget();
-        QHBoxLayout* optionLayout = new QHBoxLayout();
-        
-        QLabel* label = new QLabel(demand);
-        label->setStyleSheet("font-size: 16px; padding: 10px;");
-        
-        QPushButton* downloadBtn = new QPushButton("Télécharger");
-        downloadBtn->setProperty("demandType", demand.split(":")[0].trimmed());
-        downloadBtn->setStyleSheet(
-            "QPushButton {"
-            "    background-color: #2980b9;"
-            "    color: white;"
-            "    padding: 8px 15px;"
-            "    border: none;"
-            "    border-radius: 4px;"
-            "}"
-            "QPushButton:hover {"
-            "    background-color: #3498db;"
-            "}"
-        );
-        
-        connect(downloadBtn, &QPushButton::clicked,
-                this, &cyclemanagement::onDemandOptionClicked);
-        
-        optionLayout->addWidget(label);
-        optionLayout->addWidget(downloadBtn);
-        optionWidget->setLayout(optionLayout);
-        
-        mainLayout->addWidget(optionWidget);
-    }
-    
-    mainLayout->addStretch();
-    demandsPageWidget->setLayout(mainLayout);
-    ui->mainStack->addWidget(demandsPageWidget);
-}
-
-void cyclemanagement::onDemandsButtonClicked()
-{
-    ui->mainStack->setCurrentWidget(demandsPageWidget);
-}
-
-void cyclemanagement::onDemandOptionClicked()
-{
-    QPushButton* button = qobject_cast<QPushButton*>(sender());
-    if (button) {
-        QString demandType = button->property("demandType").toString();
-        downloadPDF(demandType);
-    }
-}
-
-void cyclemanagement::downloadPDF(const QString& demandType)
-{
-    QString fileName = QFileDialog::getSaveFileName(this,
-        tr("Save PDF File"),
-        QDir::homePath() + "/" + demandType + ".pdf",
-        tr("PDF Files (*.pdf)"));
-        
-    if (!fileName.isEmpty()) {
-        // Here you would normally generate or copy the appropriate PDF file
-        // For now, we'll just show a success message
-        QMessageBox::information(this, "Téléchargement",
-            "Le fichier " + demandType + " a été téléchargé avec succès!");
     }
 }
 

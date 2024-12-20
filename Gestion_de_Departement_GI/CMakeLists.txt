@@ -24,6 +24,7 @@ set(PROJECT_SOURCES
 
 qt_add_executable(Gestion_de_Departement_GI
     ${PROJECT_SOURCES}
+    demandswindow.cpp demandswindow.h professorswindow.cpp professorswindow.h
 )
 
 target_link_libraries(Gestion_de_Departement_GI PRIVATE

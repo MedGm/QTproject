@@ -37,41 +37,28 @@ private slots:
     void onLogoutClicked();
     void onAddStudentClicked();
     void onDeleteStudentClicked();
-    void onProfessorsButtonClicked();
     void onScheduleButtonClicked();
     void showSchedule(const QString& level);
     void onStudentsButtonClicked();
-    void onAddProfessorClicked();
-    void onDeleteProfessorClicked();
     void onInternshipsButtonClicked();
     void onAddInternshipClicked();
     void onDeleteInternshipClicked();
-    void onDemandsButtonClicked();
-    void onDemandOptionClicked();
 
 private:
     Ui::cyclemanagement *ui;
     void setupUI();
     void loadStudents(const QString& level);
-    void loadProfessors();
     void loadSchedule();
     void loadInternships();
-    void loadRequests();
     
     QStackedWidget *mainStack;
     QTableWidget *studentsTable;
-    QTableWidget *professorsTable;
     QLabel* scheduleLabel;
-    void setupProfessorsTable();
-    QWidget* pageWidget;  // Add this line to store the students page widget
-    QWidget* professorsPageWidget;  // Add this line
-    QWidget* schedulePageWidget;  // Add this line
+    QWidget* pageWidget;
+    QWidget* schedulePageWidget;
     QWidget* internshipsPageWidget;
     QTableWidget* internshipsTable;
     void setupInternshipsTable();
-    QWidget* demandsPageWidget;
-    void setupDemandsPage();
-    void downloadPDF(const QString& demandType);
 };
 
 #endif // CYCLEMANAGEMENT_H

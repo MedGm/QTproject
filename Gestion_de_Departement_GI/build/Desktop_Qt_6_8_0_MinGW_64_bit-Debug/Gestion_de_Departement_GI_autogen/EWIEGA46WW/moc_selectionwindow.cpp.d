@@ -2,6 +2,8 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen/moc_predefs.h \
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/cyclemanagement.h \
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/databasemanager.h \
+  C:/Users/moonx/Documents/Gestion_de_Departement_GI/demandswindow.h \
+  C:/Users/moonx/Documents/Gestion_de_Departement_GI/professorswindow.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QDir \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QList \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
@@ -211,6 +213,7 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QStackedWidget \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QTableWidget \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QVBoxLayout \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractitemview.h \
