@@ -6,6 +6,7 @@
 #include "cyclemanagement.h"
 #include "professorswindow.h"
 #include "demandswindow.h"
+#include "reservationswindow.h"
 
 namespace Ui {
 class SelectionWindow;
@@ -23,6 +24,7 @@ private slots:
     void onEngineerButtonClicked();
     void onProfessorsButtonClicked();
     void onDemandsButtonClicked();
+    void onReservationsButtonClicked();
 
 private:
     Ui::SelectionWindow *ui;
@@ -30,6 +32,7 @@ private:
     
     ProfessorsWindow* professorsWindow;
     DemandsWindow* demandsWindow;
+    ReservationsWindow* reservationsWindow;
 };
 
 #endif // SELECTIONWINDOW_H

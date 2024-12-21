@@ -288,6 +288,12 @@
 			null
 		],
 		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/reservationswindow.h",
+			"MU",
+			"EWIEGA46WW/moc_reservationswindow.cpp",
+			null
+		],
+		[
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/selectionwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_selectionwindow.cpp",
@@ -405,6 +411,11 @@
 		],
 		[
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/professorswindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/reservationswindow.cpp",
 			"MU",
 			null
 		],

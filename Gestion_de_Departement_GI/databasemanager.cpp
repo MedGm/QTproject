@@ -54,7 +54,7 @@ bool DatabaseManager::createTables()
         return false;
     }
 
-    // Create LSI3 table
+    // Creer LSI3
     if (!query.exec("CREATE TABLE IF NOT EXISTS LSI3 ("
                    "id INTEGER PRIMARY KEY AUTOINCREMENT,"
                    "name TEXT NOT NULL,"
@@ -64,7 +64,7 @@ bool DatabaseManager::createTables()
         return false;
     }
 
-    // Create Professors table
+    // Creer table d Professeurs
     if (!query.exec("CREATE TABLE IF NOT EXISTS Professors ("
                    "id INTEGER PRIMARY KEY AUTOINCREMENT,"
                    "name TEXT NOT NULL,"
@@ -74,7 +74,7 @@ bool DatabaseManager::createTables()
         return false;
     }
 
-    // Create Internships table with corrected columns
+    // Creer table de Stages
     if (!query.exec("CREATE TABLE IF NOT EXISTS Internships ("
                    "id INTEGER PRIMARY KEY AUTOINCREMENT,"
                    "student_name TEXT NOT NULL,"
@@ -85,6 +85,18 @@ bool DatabaseManager::createTables()
                    "FOREIGN KEY (student_cne) REFERENCES LSI2(cne) ON DELETE CASCADE,"
                    "FOREIGN KEY (student_cne) REFERENCES LSI3(cne) ON DELETE CASCADE)")) {
         qDebug() << "Error creating Internships table:" << query.lastError();
+        return false;
+    }
+
+    // Create Reservations table
+    if (!query.exec("CREATE TABLE IF NOT EXISTS Reservations ("
+                   "id INTEGER PRIMARY KEY AUTOINCREMENT,"
+                   "professor_name TEXT NOT NULL,"
+                   "room_number TEXT NOT NULL,"
+                   "date TEXT NOT NULL,"
+                   "time_slot TEXT NOT NULL,"
+                   "FOREIGN KEY (professor_name) REFERENCES Professors(name))")) {
+        qDebug() << "Error creating Reservations table:" << query.lastError();
         return false;
     }
 
@@ -168,6 +180,28 @@ int DatabaseManager::getInternshipId(const QString& studentCne, const QString& c
         return query.value(0).toInt();
     }
     return -1;
+}
+
+bool DatabaseManager::addReservation(const QString& professorName, const QString& roomNumber, 
+                                   const QString& date, const QString& timeSlot)
+{
+    QSqlQuery query;
+    query.prepare("INSERT INTO Reservations (professor_name, room_number, date, time_slot) "
+                 "VALUES (?, ?, ?, ?)");
+    query.addBindValue(professorName);
+    query.addBindValue(roomNumber);
+    query.addBindValue(date);
+    query.addBindValue(timeSlot);
+    
+    return query.exec();
+}
+
+bool DatabaseManager::removeReservation(int id)
+{
+    QSqlQuery query;
+    query.prepare("DELETE FROM Reservations WHERE id = ?");
+    query.addBindValue(id);
+    return query.exec();
 }
 
 QSqlDatabase DatabaseManager::getDatabase() const

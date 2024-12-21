@@ -5,5 +5,6 @@
 #include "EWIEGA46WW/moc_logindialog.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_professorswindow.cpp"
+#include "EWIEGA46WW/moc_reservationswindow.cpp"
 #include "EWIEGA46WW/moc_selectionwindow.cpp"
 #include "EWIEGA46WW/moc_studentdialog.cpp"

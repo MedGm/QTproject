@@ -10,7 +10,6 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     setupAnimations();
 
-    // Install event filters
     ui->Adminbutton->installEventFilter(this);
     ui->headerLabel->installEventFilter(this);
 }
@@ -20,7 +19,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_Adminbutton_clicked()
+void MainWindow::on_Adminbutton_clicked() //fonction dyal button dyal admin
 {
     LoginDialog dialog(this);
     if (dialog.exec() == QDialog::Accepted) {
@@ -43,7 +42,7 @@ void MainWindow::setupAnimations()
             this, &MainWindow::updateHeaderStylesheet);
 }
 
-void MainWindow::updateButtonStylesheet(const QVariant &value)
+void MainWindow::updateButtonStylesheet(const QVariant &value) //des fonctions de design
 {
     double opacity = value.toDouble();
     QString color = opacity > 0.5 ? "#2980b9" : "white";
@@ -64,7 +63,6 @@ void MainWindow::updateButtonStylesheet(const QVariant &value)
                     .arg(color);
     ui->Adminbutton->setStyleSheet(style);
 
-    // Update icon color
     QIcon icon(":/assets/user.png");
     QPixmap pixmap = icon.pixmap(QSize(24, 24));
     QPainter painter(&pixmap);

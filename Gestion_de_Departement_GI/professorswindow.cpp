@@ -11,7 +11,7 @@
 #include <QMessageBox>
 #include <QSqlError>
 
-ProfessorsWindow::ProfessorsWindow(QWidget *parent)
+ProfessorsWindow::ProfessorsWindow(QWidget *parent) //lwindow dyal page d professeurs
     : QMainWindow(parent)
 {
     setWindowTitle("Gestion des Professeurs");
@@ -28,15 +28,15 @@ ProfessorsWindow::~ProfessorsWindow()
 {
 }
 
-void ProfessorsWindow::setupProfessorsTable()
+void ProfessorsWindow::setupProfessorsTable() //
 {
     QVBoxLayout* mainLayout = new QVBoxLayout(centralWidget);
     
-    // Setup buttons
+    // suprimation et ajoutes des profs
     QPushButton* addButton = new QPushButton("Ajouter", this);
     QPushButton* deleteButton = new QPushButton("Supprimer Sélection", this);
     
-    // Style the buttons
+    // Style dyal buttons
     QString buttonStyle = 
         "QPushButton {"
         "    background-color: #2980b9;"
@@ -53,24 +53,24 @@ void ProfessorsWindow::setupProfessorsTable()
     addButton->setStyleSheet(buttonStyle);
     deleteButton->setStyleSheet(buttonStyle);
 
-    // Create button layout
+    // creer button layout
     QHBoxLayout* buttonLayout = new QHBoxLayout();
     buttonLayout->addWidget(addButton);
     buttonLayout->addWidget(deleteButton);
     buttonLayout->addStretch();
 
-    // Setup table
+    // creation d table
     professorsTable = new QTableWidget(this);
     professorsTable->setColumnCount(4);
     professorsTable->setHorizontalHeaderLabels({"Sélection", "Nom", "CIN", "Spécialité"});
     
-    // Set column widths
+    // tol dyal les columns
     professorsTable->setColumnWidth(0, 70);
     professorsTable->setColumnWidth(1, 250);
     professorsTable->setColumnWidth(2, 150);
     professorsTable->setColumnWidth(3, 200);
     
-    // Style the table
+    // Style d tables
     professorsTable->setStyleSheet(
         "QTableWidget {"
         "    background-color: white;"
@@ -83,15 +83,14 @@ void ProfessorsWindow::setupProfessorsTable()
         "}"
     );
 
-    // Add widgets to layout
     mainLayout->addLayout(buttonLayout);
     mainLayout->addWidget(professorsTable);
 
-    // Connect buttons
+    // connecter les buttons mea les fonctions
     connect(addButton, &QPushButton::clicked, this, &ProfessorsWindow::onAddProfessorClicked);
     connect(deleteButton, &QPushButton::clicked, this, &ProfessorsWindow::onDeleteProfessorClicked);
 
-    // Update window style
+    //window style
     setStyleSheet(
         "QMainWindow {"
         "    background-color: #f5f5f5;"
@@ -125,9 +124,6 @@ void ProfessorsWindow::setupProfessorsTable()
         "}"
     );
 }
-
-// Implementation of the remaining methods (loadProfessors, onAddProfessorClicked, onDeleteProfessorClicked)
-// Copy these from your existing cyclemanagement.cpp implementation
 void ProfessorsWindow::loadProfessors()
 {
     QSqlQuery query(DatabaseManager::instance().getDatabase());
@@ -139,7 +135,6 @@ void ProfessorsWindow::loadProfessors()
     while (query.next()) {
         professorsTable->insertRow(row);
 
-        // Add checkbox
         QWidget* checkBoxWidget = new QWidget();
         QCheckBox* checkBox = new QCheckBox();
         QHBoxLayout* layout = new QHBoxLayout(checkBoxWidget);
@@ -149,7 +144,7 @@ void ProfessorsWindow::loadProfessors()
         checkBoxWidget->setLayout(layout);
         professorsTable->setCellWidget(row, 0, checkBoxWidget);
 
-        // Add data
+        //data dyal les profs
         professorsTable->setItem(row, 1, new QTableWidgetItem(query.value("name").toString()));
         professorsTable->setItem(row, 2, new QTableWidgetItem(query.value("cin").toString()));
         professorsTable->setItem(row, 3, new QTableWidgetItem(query.value("speciality").toString()));

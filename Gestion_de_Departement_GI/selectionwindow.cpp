@@ -16,13 +16,14 @@ SelectionWindow::SelectionWindow(QWidget *parent)
     ui->setupUi(this);
     setupIcons();
     
-    // Connect buttons
     connect(ui->engineerButton, &QPushButton::clicked, this, &SelectionWindow::onEngineerButtonClicked);
     connect(ui->professorsButton, &QPushButton::clicked, this, &SelectionWindow::onProfessorsButtonClicked);
     connect(ui->demandsButton, &QPushButton::clicked, this, &SelectionWindow::onDemandsButtonClicked);
+    connect(ui->reservationsButton, &QPushButton::clicked, this, &SelectionWindow::onReservationsButtonClicked);
     
     professorsWindow = nullptr;
     demandsWindow = nullptr;
+    reservationsWindow = nullptr;
 }
 
 SelectionWindow::~SelectionWindow()
@@ -57,7 +58,6 @@ void SelectionWindow::setupIcons()
     setupButton(ui->licenceButton, ":/assets/licence.png");
     setupButton(ui->engineerButton, ":/assets/cycle.png");
     
-    // Configure button layouts
     for(auto button : {ui->masterButton, ui->licenceButton, ui->engineerButton}) {
         button->setFlat(true);
         QGraphicsDropShadowEffect* shadow = new QGraphicsDropShadowEffect(this);
@@ -68,14 +68,14 @@ void SelectionWindow::setupIcons()
     }
 }
 
-void SelectionWindow::onEngineerButtonClicked()
+void SelectionWindow::onEngineerButtonClicked() //configuration de button de cycle d'ing
 {
     cyclemanagement *cycleWindow = new cyclemanagement(this);
     cycleWindow->show();
     this->hide();
 }
 
-void SelectionWindow::onProfessorsButtonClicked()
+void SelectionWindow::onProfessorsButtonClicked() //configuration de button de professeur
 {
     if (!professorsWindow) {
         professorsWindow = new ProfessorsWindow(this);
@@ -83,10 +83,18 @@ void SelectionWindow::onProfessorsButtonClicked()
     professorsWindow->show();
 }
 
-void SelectionWindow::onDemandsButtonClicked()
+void SelectionWindow::onDemandsButtonClicked() //configuration de button des demandes
 {
     if (!demandsWindow) {
         demandsWindow = new DemandsWindow(this);
     }
     demandsWindow->show();
+}
+
+void SelectionWindow::onReservationsButtonClicked()
+{
+    if (!reservationsWindow) {
+        reservationsWindow = new ReservationsWindow(this);
+    }
+    reservationsWindow->show();
 }
