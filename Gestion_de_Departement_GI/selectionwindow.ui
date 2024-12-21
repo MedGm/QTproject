@@ -29,7 +29,7 @@
     QWidget#centralwidget {
         background: rgba(41, 128, 185, 0.85);
     }
-    #professorsButton, #demandsButton {
+    #professorsButton, #demandsButton, #reservationsButton {
         background-color: rgba(255, 255, 255, 0.15);
         color: white;
         border: none;
@@ -39,7 +39,7 @@
         font-weight: bold;
         padding: 8px 15px;
     }
-    #professorsButton:hover, #demandsButton:hover {
+    #professorsButton:hover, #demandsButton:hover, #reservationsButton:hover {
         background-color: rgba(255, 255, 255, 0.25);
     }
     QLabel {
@@ -79,7 +79,7 @@
          <string>Professeurs</string>
         </property>
         <property name="icon">
-         <iconset resource="resources.qrc">
+         <iconset>
           <normaloff>:/assets/professor.png</normaloff>:/assets/professor.png</iconset>
         </property>
        </widget>
@@ -102,15 +102,44 @@
          <string>Demandes</string>
         </property>
         <property name="icon">
-         <iconset resource="resources.qrc">
+         <iconset>
           <normaloff>:/assets/document.png</normaloff>:/assets/document.png</iconset>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="reservationsButton">
+        <property name="minimumSize">
+         <size>
+          <width>180</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+                background-color: rgba(255, 255, 255, 0.15);
+                color: white;
+                border: none;
+                border-radius: 8px;
+                font-family: 'Segoe UI', Arial;
+                font-size: 14px;
+                font-weight: bold;
+                padding: 8px 15px;
+            </string>
+        </property>
+        <property name="text">
+         <string>Réservations</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>:/assets/calendar.png</normaloff>:/assets/calendar.png</iconset>
         </property>
        </widget>
       </item>
       <item>
        <spacer name="horizontalSpacer">
         <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+         <enum>Qt::Orientation::Horizontal</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -125,7 +154,7 @@
     <item>
      <spacer name="topSpacer">
       <property name="orientation">
-       <enum>Qt::Vertical</enum>
+       <enum>Qt::Orientation::Vertical</enum>
       </property>
       <property name="sizeHint" stdset="0">
        <size>
@@ -162,7 +191,7 @@ font-family: 'Roboto', sans-serif;</string>
       <item>
        <spacer name="horizontalSpacer1">
         <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+         <enum>Qt::Orientation::Horizontal</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -300,7 +329,7 @@ QPushButton:pressed {
       <item>
        <spacer name="horizontalSpacer2">
         <property name="orientation">
-         <enum>Qt::Horizontal</enum>
+         <enum>Qt::Orientation::Horizontal</enum>
         </property>
         <property name="sizeHint" stdset="0">
          <size>
@@ -315,7 +344,7 @@ QPushButton:pressed {
     <item>
      <spacer name="bottomSpacer">
       <property name="orientation">
-       <enum>Qt::Vertical</enum>
+       <enum>Qt::Orientation::Vertical</enum>
       </property>
       <property name="sizeHint" stdset="0">
        <size>

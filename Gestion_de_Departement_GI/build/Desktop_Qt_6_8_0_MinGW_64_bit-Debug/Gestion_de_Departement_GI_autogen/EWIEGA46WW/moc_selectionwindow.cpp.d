@@ -4,6 +4,7 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/databasemanager.h \
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/demandswindow.h \
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/professorswindow.h \
+  C:/Users/moonx/Documents/Gestion_de_Departement_GI/reservationswindow.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QDir \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QList \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QObject \

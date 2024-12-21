@@ -16,7 +16,6 @@ LoginDialog::LoginDialog(QWidget *parent)
     setupInputIcons();
     ui->loginButton->installEventFilter(this);
 
-    // Style the login button initially
     updateButtonStylesheet(0.0);
 }
 
@@ -32,8 +31,6 @@ void LoginDialog::setupAnimations()
     connect(buttonColorAnimation, &QVariantAnimation::valueChanged,
             this, &LoginDialog::updateButtonStylesheet);
 }
-
-// Remove setupInputs() function and its calls
 
 void LoginDialog::updateButtonStylesheet(const QVariant &value)
 {
@@ -76,19 +73,21 @@ void LoginDialog::on_loginButton_clicked()
     QString username = ui->usernameLineEdit->text();
     QString password = ui->passwordLineEdit->text();
     
-    // For now, implement a simple check
+    ui->errorLabel->setVisible(false);
+    
+    // username w password dyal admin
     if (username == "admin" && password == "admin") {
         accept();
     } else {
-        // TODO: Show error message
+        ui->errorLabel->setVisible(true);  // message d erreur
+        ui->passwordLineEdit->clear();
         qDebug() << "Invalid credentials";
     }
 }
 
-void LoginDialog::setupInputIcons()
+void LoginDialog::setupInputIcons() // design de login
 {
-    // Setup username icon
-    QIcon userIcon(":/assets/user.png");  // Using user.png instead of useradminlogo.png
+    QIcon userIcon(":/assets/user.png");
     QPixmap userPixmap = userIcon.pixmap(QSize(24, 24));
     
     QLabel* userIconLabel = new QLabel(ui->usernameLineEdit);
@@ -96,7 +95,6 @@ void LoginDialog::setupInputIcons()
     userIconLabel->setStyleSheet("QLabel { background-color: transparent; }");
     userIconLabel->setGeometry(8, (ui->usernameLineEdit->height() - 24) / 2, 24, 24);
 
-    // Setup password icon
     QIcon lockIcon(":/assets/padlock.png");
     QPixmap lockPixmap = lockIcon.pixmap(QSize(24, 24));
     

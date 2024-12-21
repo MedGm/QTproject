@@ -19,6 +19,9 @@ public:
     bool removeStudent(const QString& level, const QString& cne);
     bool removeProfessor(const QString& cin);
     bool removeInternship(int id);
+    bool addReservation(const QString& professorName, const QString& roomNumber, 
+                       const QString& date, const QString& timeSlot);
+    bool removeReservation(int id);
     QSqlDatabase getDatabase() const;
     int getInternshipId(const QString& studentCne, const QString& company);
 

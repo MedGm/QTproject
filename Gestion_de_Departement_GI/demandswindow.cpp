@@ -26,13 +26,11 @@ void DemandsWindow::setupDemandsPage()
 {
     QVBoxLayout* mainLayout = new QVBoxLayout(centralWidget);
     
-    // Create title label
     QLabel* titleLabel = new QLabel("Les Demandes");
     titleLabel->setStyleSheet("font-size: 24px; font-weight: bold; margin: 20px; color: #2c3e50;");
     titleLabel->setAlignment(Qt::AlignCenter);
     mainLayout->addWidget(titleLabel);
     
-    // Create a white container for demands
     QWidget* demandsContainer = new QWidget();
     demandsContainer->setStyleSheet(
         "QWidget {"
@@ -60,7 +58,7 @@ void DemandsWindow::setupDemandsPage()
     
     QVBoxLayout* containerLayout = new QVBoxLayout(demandsContainer);
     
-    // Demand options
+    // les demandes li kaynin
     QStringList demands = {
         "Demande 1: Convention de stage",
         "Demande 2: Reservation des Stages",
@@ -72,21 +70,19 @@ void DemandsWindow::setupDemandsPage()
         QHBoxLayout* optionLayout = new QHBoxLayout();
         
         QLabel* label = new QLabel(demand);
-        label->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred); // Make label expand
+        label->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Preferred);
         
         QPushButton* downloadBtn = new QPushButton("Télécharger");
         downloadBtn->setProperty("demandType", demand.split(":")[0].trimmed());
-        downloadBtn->setFixedWidth(120); // Fix the button width
+        downloadBtn->setFixedWidth(120);
         
-        // Ensure the connection is properly made
+        //connection dyal button mea fonction
         connect(downloadBtn, &QPushButton::clicked, this, &DemandsWindow::onDemandOptionClicked);
         
-        // Add widgets to layout with proper alignment
         optionLayout->addWidget(label);
-        optionLayout->addStretch(); // Add stretch between label and button
+        optionLayout->addStretch();
         optionLayout->addWidget(downloadBtn);
         
-        // Set margins for better spacing
         optionLayout->setContentsMargins(20, 10, 20, 10);
         
         optionWidget->setLayout(optionLayout);
@@ -95,7 +91,7 @@ void DemandsWindow::setupDemandsPage()
     mainLayout->addWidget(demandsContainer);
     mainLayout->addStretch();
 
-    // Update window style
+    //window style
     setStyleSheet(
         "QMainWindow {"
         "    background-color: #f5f5f5;"
@@ -124,7 +120,7 @@ void DemandsWindow::onDemandOptionClicked()
             sourceFile = sourcePath + "autre_demande.pdf";
         }
 
-        // blast save name dyak fichiers
+        // blast save name dyal fichiers
         QString fileName = QFileDialog::getSaveFileName(this,
             tr("Enregistrer le fichier PDF"),
             QDir::homePath() + "/" + demandType + ".pdf",
