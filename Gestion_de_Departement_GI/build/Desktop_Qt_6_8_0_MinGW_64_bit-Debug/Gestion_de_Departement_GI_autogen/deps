@@ -8,10 +8,14 @@ Gestion_de_Departement_GI_autogen/timestamp: \
 	C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen/moc_predefs.h \
 	C:/Users/moonx/Documents/Gestion_de_Departement_GI/cyclemanagement.cpp \
 	C:/Users/moonx/Documents/Gestion_de_Departement_GI/cyclemanagement.h \
+	C:/Users/moonx/Documents/Gestion_de_Departement_GI/database.cpp \
+	C:/Users/moonx/Documents/Gestion_de_Departement_GI/database.h \
 	C:/Users/moonx/Documents/Gestion_de_Departement_GI/databasemanager.cpp \
 	C:/Users/moonx/Documents/Gestion_de_Departement_GI/databasemanager.h \
 	C:/Users/moonx/Documents/Gestion_de_Departement_GI/demandswindow.cpp \
 	C:/Users/moonx/Documents/Gestion_de_Departement_GI/demandswindow.h \
+	C:/Users/moonx/Documents/Gestion_de_Departement_GI/licence.cpp \
+	C:/Users/moonx/Documents/Gestion_de_Departement_GI/licence.h \
 	C:/Users/moonx/Documents/Gestion_de_Departement_GI/logindialog.cpp \
 	C:/Users/moonx/Documents/Gestion_de_Departement_GI/logindialog.h \
 	C:/Users/moonx/Documents/Gestion_de_Departement_GI/main.cpp \
@@ -181,7 +185,9 @@ Gestion_de_Departement_GI_autogen/timestamp: \
 	D:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h \
 	D:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h \
 	D:/Qt/6.8.0/mingw_64/include/QtGui/QPainter \
+	D:/Qt/6.8.0/mingw_64/include/QtGui/QPixmap \
 	D:/Qt/6.8.0/mingw_64/include/QtGui/QResizeEvent \
+	D:/Qt/6.8.0/mingw_64/include/QtGui/QShortcut \
 	D:/Qt/6.8.0/mingw_64/include/QtGui/QTransform \
 	D:/Qt/6.8.0/mingw_64/include/QtGui/qaction.h \
 	D:/Qt/6.8.0/mingw_64/include/QtGui/qbitmap.h \
@@ -214,6 +220,7 @@ Gestion_de_Departement_GI_autogen/timestamp: \
 	D:/Qt/6.8.0/mingw_64/include/QtGui/qrgba64.h \
 	D:/Qt/6.8.0/mingw_64/include/QtGui/qscreen.h \
 	D:/Qt/6.8.0/mingw_64/include/QtGui/qscreen_platform.h \
+	D:/Qt/6.8.0/mingw_64/include/QtGui/qshortcut.h \
 	D:/Qt/6.8.0/mingw_64/include/QtGui/qtextcursor.h \
 	D:/Qt/6.8.0/mingw_64/include/QtGui/qtextdocument.h \
 	D:/Qt/6.8.0/mingw_64/include/QtGui/qtextformat.h \
@@ -245,6 +252,7 @@ Gestion_de_Departement_GI_autogen/timestamp: \
 	D:/Qt/6.8.0/mingw_64/include/QtWidgets/QLineEdit \
 	D:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
 	D:/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton \
+	D:/Qt/6.8.0/mingw_64/include/QtWidgets/QSpacerItem \
 	D:/Qt/6.8.0/mingw_64/include/QtWidgets/QStackedWidget \
 	D:/Qt/6.8.0/mingw_64/include/QtWidgets/QTableWidget \
 	D:/Qt/6.8.0/mingw_64/include/QtWidgets/QVBoxLayout \

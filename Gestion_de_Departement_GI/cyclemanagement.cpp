@@ -14,9 +14,23 @@ cyclemanagement::cyclemanagement(QWidget *parent)
     , ui(new Ui::cyclemanagement)
 {
     ui->setupUi(this);
+    
+    // Initialize UI first
     setupUI();
+    
+    // Set window properties for fullscreen
+    this->setWindowState(Qt::WindowFullScreen);
+    this->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
+    
+    // Add ESC key shortcut to exit fullscreen
+    QShortcut* shortcut = new QShortcut(QKeySequence(Qt::Key_Escape), this);
+    connect(shortcut, &QShortcut::activated, [this]() {
+        if (this->isFullScreen()) {
+            this->showNormal();
+        }
+    });
 
-    // Connecter les buttons et les selections
+    // Connect other signals
     connect(ui->levelComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged),
             this, &cyclemanagement::onLevelChanged);
     connect(ui->logoutButton, &QPushButton::clicked,
@@ -322,7 +336,6 @@ void cyclemanagement::setupInternshipsTable()
 void cyclemanagement::loadInternships()
 {
     QSqlQuery query(DatabaseManager::instance().getDatabase());
-
     query.prepare("SELECT * FROM Internships");
     
     if (!query.exec()) {
@@ -336,6 +349,7 @@ void cyclemanagement::loadInternships()
     while (query.next()) {
         internshipsTable->insertRow(row);
 
+        // Create checkbox
         QWidget* checkBoxWidget = new QWidget();
         QCheckBox* checkBox = new QCheckBox();
         QHBoxLayout* layout = new QHBoxLayout(checkBoxWidget);
@@ -345,34 +359,71 @@ void cyclemanagement::loadInternships()
         checkBoxWidget->setLayout(layout);
         internshipsTable->setCellWidget(row, 0, checkBoxWidget);
 
-        // Add data
+        // Get data from query
+        QString studentName = query.value("student_name").toString();
         QString studentCne = query.value("student_cne").toString();
+        QString company = query.value("company").toString();
+        QString subject = query.value("subject").toString();
         
-        // Set the items
-        internshipsTable->setItem(row, 1, new QTableWidgetItem(query.value("student_name").toString()));
-        internshipsTable->setItem(row, 2, new QTableWidgetItem(studentCne));
-        internshipsTable->setItem(row, 3, new QTableWidgetItem(query.value("company").toString()));
-        internshipsTable->setItem(row, 4, new QTableWidgetItem(query.value("subject").toString()));
+        // Create and set items with alignment
+        QTableWidgetItem* nameItem = new QTableWidgetItem(studentName);
+        QTableWidgetItem* cneItem = new QTableWidgetItem(studentCne);
+        QTableWidgetItem* companyItem = new QTableWidgetItem(company);
+        QTableWidgetItem* subjectItem = new QTableWidgetItem(subject);
 
-        // Determiner le niveau des etudiants
+        nameItem->setTextAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+        cneItem->setTextAlignment(Qt::AlignCenter);
+        companyItem->setTextAlignment(Qt::AlignCenter);
+        subjectItem->setTextAlignment(Qt::AlignLeft | Qt::AlignVCenter);
+
+        internshipsTable->setItem(row, 1, nameItem);
+        internshipsTable->setItem(row, 2, cneItem);
+        internshipsTable->setItem(row, 3, companyItem);
+        internshipsTable->setItem(row, 4, subjectItem);
+
+        // Find student level using a separate query
         QString level = "Unknown";
         QSqlQuery levelQuery(DatabaseManager::instance().getDatabase());
-        QString levelCheckQuery = "SELECT 'LSI 1' as level FROM LSI1 WHERE cne = :cne "
-                                "UNION ALL "
-                                "SELECT 'LSI 2' FROM LSI2 WHERE cne = :cne "
-                                "UNION ALL "
-                                "SELECT 'LSI 3' FROM LSI3 WHERE cne = :cne";
-        levelQuery.prepare(levelCheckQuery);
-        levelQuery.bindValue(":cne", studentCne);
         
-        if (levelQuery.exec()) {
-            level = levelQuery.value("level").toString();
+        // Try LSI1
+        levelQuery.prepare("SELECT 1 FROM LSI1 WHERE cne = ?");
+        levelQuery.addBindValue(studentCne);
+        if (levelQuery.exec() && levelQuery.next()) {
+            level = "LSI 1";
+        } else {
+            // Try LSI2
+            levelQuery.prepare("SELECT 1 FROM LSI2 WHERE cne = ?");
+            levelQuery.addBindValue(studentCne);
+            if (levelQuery.exec() && levelQuery.next()) {
+                level = "LSI 2";
+            } else {
+                // Try LSI3
+                levelQuery.prepare("SELECT 1 FROM LSI3 WHERE cne = ?");
+                levelQuery.addBindValue(studentCne);
+                if (levelQuery.exec() && levelQuery.next()) {
+                    level = "LSI 3";
+                }
+            }
         }
-        
-        internshipsTable->setItem(row, 5, new QTableWidgetItem(level));
+
+        QTableWidgetItem* levelItem = new QTableWidgetItem(level);
+        levelItem->setTextAlignment(Qt::AlignCenter);
+        internshipsTable->setItem(row, 5, levelItem);
+
         internshipsTable->setRowHeight(row, 35);
         row++;
     }
+
+    // Adjust column widths
+    internshipsTable->setColumnWidth(0, 70);   // Checkbox
+    internshipsTable->setColumnWidth(1, 200);  // Name
+    internshipsTable->setColumnWidth(2, 120);  // CNE
+    internshipsTable->setColumnWidth(3, 150);  // Company
+    internshipsTable->setColumnWidth(4, 300);  // Subject
+    internshipsTable->setColumnWidth(5, 100);  // Level
+
+    internshipsTable->resizeRowsToContents();
+    internshipsTable->setAlternatingRowColors(true);
 }
 
 void cyclemanagement::onInternshipsButtonClicked()
