@@ -155,6 +155,7 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   D:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/QResizeEvent \
+  D:/Qt/6.8.0/mingw_64/include/QtGui/QShortcut \
   D:/Qt/6.8.0/mingw_64/include/QtGui/QTransform \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qaction.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qbitmap.h \
@@ -185,6 +186,7 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   D:/Qt/6.8.0/mingw_64/include/QtGui/qrgba64.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qscreen.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qscreen_platform.h \
+  D:/Qt/6.8.0/mingw_64/include/QtGui/qshortcut.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qtextdocument.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qtgui-config.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qtguiexports.h \

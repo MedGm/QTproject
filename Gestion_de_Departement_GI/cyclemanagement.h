@@ -16,6 +16,7 @@
 #include <QCheckBox>
 #include <QFileDialog>
 #include <QDir>
+#include <QShortcut>  // Add this at the top with other includes
 
 namespace Ui {
 class cyclemanagement;

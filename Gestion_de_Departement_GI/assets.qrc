@@ -11,5 +11,7 @@
         <file>assets/emplois3.png</file>
         <file>assets/emplois5.png</file>
         <file>assets/log-uae.png</file>
+	<file>assets/etad.png</file>
+	<file>assets/etidai.png</file>	
     </qresource>
 </RCC>

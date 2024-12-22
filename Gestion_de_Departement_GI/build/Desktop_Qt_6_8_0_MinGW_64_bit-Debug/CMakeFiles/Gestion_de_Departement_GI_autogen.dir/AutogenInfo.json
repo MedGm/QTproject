@@ -258,6 +258,12 @@
 			null
 		],
 		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/database.h",
+			"MU",
+			"EWIEGA46WW/moc_database.cpp",
+			null
+		],
+		[
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/databasemanager.h",
 			"MU",
 			"EWIEGA46WW/moc_databasemanager.cpp",
@@ -267,6 +273,12 @@
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/demandswindow.h",
 			"MU",
 			"EWIEGA46WW/moc_demandswindow.cpp",
+			null
+		],
+		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/licence.h",
+			"MU",
+			"EWIEGA46WW/moc_licence.cpp",
 			null
 		],
 		[
@@ -385,12 +397,22 @@
 			null
 		],
 		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/database.cpp",
+			"MU",
+			null
+		],
+		[
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/databasemanager.cpp",
 			"MU",
 			null
 		],
 		[
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/demandswindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/licence.cpp",
 			"MU",
 			null
 		],

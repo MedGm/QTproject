@@ -2,6 +2,7 @@
 #include "EWIEGA46WW/moc_cyclemanagement.cpp"
 #include "EWIEGA46WW/moc_databasemanager.cpp"
 #include "EWIEGA46WW/moc_demandswindow.cpp"
+#include "EWIEGA46WW/moc_licence.cpp"
 #include "EWIEGA46WW/moc_logindialog.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_professorswindow.cpp"

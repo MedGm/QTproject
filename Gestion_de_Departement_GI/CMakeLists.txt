@@ -27,6 +27,8 @@ qt_add_executable(Gestion_de_Departement_GI
     demandswindow.cpp demandswindow.h professorswindow.cpp professorswindow.h
     reservationswindow.cpp reservationswindow.h
     .gitignore assets.qrc CMakeLists.txt CMakeLists.txt.user cyclemanagement.cpp cyclemanagement.h cyclemanagement.ui databasemanager.cpp databasemanager.h demandswindow.cpp demandswindow.h  logindialog.cpp logindialog.h logindialog.ui main.cpp mainwindow.cpp mainwindow.h mainwindow.ui professorswindow.cpp professorswindow.h reservationswindow.cpp reservationswindow.h selectionwindow.cpp selectionwindow.h selectionwindow.ui studentdialog.cpp studentdialog.h
+    ad_data.txt database.cpp database.h idai_data.txt licence.cpp licence.h licence.ui
+    assets/etad.png assets/etidai.png
 )
 
 target_link_libraries(Gestion_de_Departement_GI PRIVATE
