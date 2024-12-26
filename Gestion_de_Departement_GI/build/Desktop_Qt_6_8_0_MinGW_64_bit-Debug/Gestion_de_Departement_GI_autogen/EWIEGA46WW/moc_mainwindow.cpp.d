@@ -3,7 +3,9 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/cyclemanagement.h \
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/databasemanager.h \
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/demandswindow.h \
+  C:/Users/moonx/Documents/Gestion_de_Departement_GI/licence.h \
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/logindialog.h \
+  C:/Users/moonx/Documents/Gestion_de_Departement_GI/master.h \
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/professorswindow.h \
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/reservationswindow.h \
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/selectionwindow.h \
@@ -163,6 +165,7 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   D:/Qt/6.8.0/mingw_64/include/QtCore/qxptype_traits.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qyieldcpu.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/QPainter \
+  D:/Qt/6.8.0/mingw_64/include/QtGui/QPixmap \
   D:/Qt/6.8.0/mingw_64/include/QtGui/QResizeEvent \
   D:/Qt/6.8.0/mingw_64/include/QtGui/QShortcut \
   D:/Qt/6.8.0/mingw_64/include/QtGui/QTransform \
@@ -198,7 +201,9 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   D:/Qt/6.8.0/mingw_64/include/QtGui/qscreen.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qscreen_platform.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qshortcut.h \
+  D:/Qt/6.8.0/mingw_64/include/QtGui/qtextcursor.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qtextdocument.h \
+  D:/Qt/6.8.0/mingw_64/include/QtGui/qtextformat.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qtextoption.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qtgui-config.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qtguiexports.h \
@@ -224,8 +229,10 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QHBoxLayout \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QHeaderView \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QLabel \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/QLineEdit \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/QSpacerItem \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QStackedWidget \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QTableWidget \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QVBoxLayout \
@@ -248,6 +255,7 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qlabel.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayout.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/qlineedit.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qpushbutton.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qrubberband.h \

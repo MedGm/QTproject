@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QGraphicsEffect>
 #include "cyclemanagement.h"
+#include "licence.h"
+#include "master.h"
 #include "professorswindow.h"
 #include "demandswindow.h"
 #include "reservationswindow.h"
@@ -22,6 +24,8 @@ public:
 
 private slots:
     void onEngineerButtonClicked();
+    void onLicenceButtonClicked();
+    void onMasterButtonClicked();
     void onProfessorsButtonClicked();
     void onDemandsButtonClicked();
     void onReservationsButtonClicked();

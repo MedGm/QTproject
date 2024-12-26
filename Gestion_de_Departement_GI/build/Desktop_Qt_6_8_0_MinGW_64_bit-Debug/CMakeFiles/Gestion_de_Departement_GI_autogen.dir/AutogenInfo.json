@@ -294,6 +294,12 @@
 			null
 		],
 		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/master.h",
+			"MU",
+			"EWIEGA46WW/moc_master.cpp",
+			null
+		],
+		[
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/professorswindow.h",
 			"MU",
 			"EWIEGA46WW/moc_professorswindow.cpp",
@@ -428,6 +434,11 @@
 		],
 		[
 			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/moonx/Documents/Gestion_de_Departement_GI/master.cpp",
 			"MU",
 			null
 		],

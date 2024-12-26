@@ -10,6 +10,9 @@
 #include <QFormLayout>
 #include <QMessageBox>
 #include <QSqlError>
+#include <QStackedWidget>
+#include <QComboBox>
+#include <QDateEdit>
 
 ProfessorsWindow::ProfessorsWindow(QWidget *parent) //lwindow dyal page d professeurs
     : QMainWindow(parent)
@@ -59,6 +62,11 @@ void ProfessorsWindow::setupProfessorsTable() //
     buttonLayout->addWidget(deleteButton);
     buttonLayout->addStretch();
 
+    // Add button for showing reservations
+    QPushButton* showReservationsButton = new QPushButton("Réservations", this);
+    showReservationsButton->setStyleSheet(buttonStyle);
+    buttonLayout->addWidget(showReservationsButton);
+
     // creation d table
     professorsTable = new QTableWidget(this);
     professorsTable->setColumnCount(4);
@@ -89,6 +97,18 @@ void ProfessorsWindow::setupProfessorsTable() //
     // connecter les buttons mea les fonctions
     connect(addButton, &QPushButton::clicked, this, &ProfessorsWindow::onAddProfessorClicked);
     connect(deleteButton, &QPushButton::clicked, this, &ProfessorsWindow::onDeleteProfessorClicked);
+    connect(showReservationsButton, &QPushButton::clicked, this, &ProfessorsWindow::onShowReservationsClicked);
+
+    // Initialize stacked widget and pages
+    mainStack = new QStackedWidget(this);
+    professorsPage = new QWidget();
+    professorsPage->setLayout(mainLayout);
+    
+    setupReservationsTable();
+    
+    mainStack->addWidget(professorsPage);
+    mainStack->addWidget(reservationsPage);
+    setCentralWidget(mainStack);
 
     //window style
     setStyleSheet(
@@ -124,6 +144,62 @@ void ProfessorsWindow::setupProfessorsTable() //
         "}"
     );
 }
+
+void ProfessorsWindow::setupReservationsTable()
+{
+    reservationsPage = new QWidget();
+    QVBoxLayout* layout = new QVBoxLayout(reservationsPage);
+    
+    // Create buttons
+    QPushButton* addButton = new QPushButton("Ajouter Réservation", this);
+    QPushButton* deleteButton = new QPushButton("Supprimer Sélection", this);
+    QPushButton* backButton = new QPushButton("Retour", this);
+    
+    QString buttonStyle = "QPushButton {"
+                         "    background-color: #2980b9;"
+                         "    color: white;"
+                         "    border: none;"
+                         "    border-radius: 5px;"
+                         "    padding: 8px 15px;"
+                         "    font-weight: bold;"
+                         "}"
+                         "QPushButton:hover {"
+                         "    background-color: #3498db;"
+                         "}";
+    
+    addButton->setStyleSheet(buttonStyle);
+    deleteButton->setStyleSheet(buttonStyle);
+    backButton->setStyleSheet(buttonStyle);
+
+    QHBoxLayout* buttonLayout = new QHBoxLayout();
+    buttonLayout->addWidget(addButton);
+    buttonLayout->addWidget(deleteButton);
+    buttonLayout->addWidget(backButton);
+    buttonLayout->addStretch();
+
+    // Create table
+    reservationsTable = new QTableWidget(this);
+    reservationsTable->setColumnCount(5);
+    reservationsTable->setHorizontalHeaderLabels({"Sélection", "Professeur", "Salle", "Date", "Horaire"});
+    
+    // Set column widths
+    reservationsTable->setColumnWidth(0, 70);
+    reservationsTable->setColumnWidth(1, 200);
+    reservationsTable->setColumnWidth(2, 100);
+    reservationsTable->setColumnWidth(3, 150);
+    reservationsTable->setColumnWidth(4, 150);
+
+    layout->addLayout(buttonLayout);
+    layout->addWidget(reservationsTable);
+
+    // Connect signals
+    connect(addButton, &QPushButton::clicked, this, &ProfessorsWindow::onAddReservationClicked);
+    connect(deleteButton, &QPushButton::clicked, this, &ProfessorsWindow::onDeleteReservationClicked);
+    connect(backButton, &QPushButton::clicked, [this]() {
+        mainStack->setCurrentWidget(professorsPage);
+    });
+}
+
 void ProfessorsWindow::loadProfessors()
 {
     QSqlQuery query(DatabaseManager::instance().getDatabase());
@@ -150,6 +226,42 @@ void ProfessorsWindow::loadProfessors()
         professorsTable->setItem(row, 3, new QTableWidgetItem(query.value("speciality").toString()));
         
         professorsTable->setRowHeight(row, 35);
+        row++;
+    }
+}
+
+void ProfessorsWindow::loadReservations()
+{
+    QSqlQuery query(DatabaseManager::instance().getDatabase());
+    query.prepare("SELECT * FROM Reservations");
+    
+    if (!query.exec()) {
+        qDebug() << "Error loading reservations:" << query.lastError().text();
+        return;
+    }
+
+    reservationsTable->setRowCount(0);
+    int row = 0;
+    
+    while (query.next()) {
+        reservationsTable->insertRow(row);
+
+        // Add checkbox
+        QWidget* checkBoxWidget = new QWidget();
+        QCheckBox* checkBox = new QCheckBox();
+        QHBoxLayout* layout = new QHBoxLayout(checkBoxWidget);
+        layout->addWidget(checkBox);
+        layout->setAlignment(Qt::AlignCenter);
+        layout->setContentsMargins(0, 0, 0, 0);
+        checkBoxWidget->setLayout(layout);
+        reservationsTable->setCellWidget(row, 0, checkBoxWidget);
+
+        // Add reservation data
+        reservationsTable->setItem(row, 1, new QTableWidgetItem(query.value("professor_name").toString()));
+        reservationsTable->setItem(row, 2, new QTableWidgetItem(query.value("room_number").toString()));
+        reservationsTable->setItem(row, 3, new QTableWidgetItem(query.value("date").toString()));
+        reservationsTable->setItem(row, 4, new QTableWidgetItem(query.value("time_slot").toString()));
+
         row++;
     }
 }
@@ -208,4 +320,87 @@ void ProfessorsWindow::onDeleteProfessorClicked()
     if(anyDeleted) {
         loadProfessors();
     }
+}
+
+void ProfessorsWindow::onShowReservationsClicked()
+{
+    loadReservations();
+    mainStack->setCurrentWidget(reservationsPage);
+}
+
+void ProfessorsWindow::onAddReservationClicked()
+{
+    QDialog dialog(this);
+    dialog.setWindowTitle("Ajouter Réservation");
+
+    QComboBox* professorCombo = new QComboBox(&dialog);
+    QLineEdit* roomEdit = new QLineEdit(&dialog);
+    QDateEdit* dateEdit = new QDateEdit(&dialog);
+    QComboBox* timeSlotCombo = new QComboBox(&dialog);
+    
+    // Load professors into combo box
+    QSqlQuery query(DatabaseManager::instance().getDatabase());
+    query.exec("SELECT name FROM Professors");
+    while (query.next()) {
+        professorCombo->addItem(query.value(0).toString());
+    }
+
+    // Add time slots
+    timeSlotCombo->addItems({"8:30-10:30", "10:45-12:45", "14:30-16:30", "16:45-18:45"});
+    
+    dateEdit->setCalendarPopup(true);
+    dateEdit->setMinimumDate(QDate::currentDate());
+
+    QFormLayout* formLayout = new QFormLayout;
+    formLayout->addRow("Professeur:", professorCombo);
+    formLayout->addRow("Salle:", roomEdit);
+    formLayout->addRow("Date:", dateEdit);
+    formLayout->addRow("Horaire:", timeSlotCombo);
+
+    QPushButton* okButton = new QPushButton("OK", &dialog);
+    QPushButton* cancelButton = new QPushButton("Annuler", &dialog);
+
+    QHBoxLayout* buttonLayout = new QHBoxLayout;
+    buttonLayout->addWidget(okButton);
+    buttonLayout->addWidget(cancelButton);
+    formLayout->addRow(buttonLayout);
+
+    dialog.setLayout(formLayout);
+
+    connect(okButton, &QPushButton::clicked, &dialog, &QDialog::accept);
+    connect(cancelButton, &QPushButton::clicked, &dialog, &QDialog::reject);
+
+    if (dialog.exec() == QDialog::Accepted) {
+        DatabaseManager::instance().addReservation(
+            professorCombo->currentText(),
+            roomEdit->text(),
+            dateEdit->date().toString("dd/MM/yyyy"),
+            timeSlotCombo->currentText()
+        );
+        loadReservations();
+    }
+}
+
+void ProfessorsWindow::onDeleteReservationClicked()
+{
+    for (int row = reservationsTable->rowCount() - 1; row >= 0; row--) {
+        QWidget* widget = reservationsTable->cellWidget(row, 0);
+        QCheckBox* checkBox = widget->findChild<QCheckBox*>();
+        
+        if (checkBox && checkBox->isChecked()) {
+            QString professorName = reservationsTable->item(row, 1)->text();
+            QString roomNumber = reservationsTable->item(row, 2)->text();
+            QString date = reservationsTable->item(row, 3)->text();
+            QString timeSlot = reservationsTable->item(row, 4)->text();
+            
+            QSqlQuery query(DatabaseManager::instance().getDatabase());
+            query.prepare("DELETE FROM Reservations WHERE professor_name = ? AND room_number = ? AND date = ? AND time_slot = ?");
+            query.addBindValue(professorName);
+            query.addBindValue(roomNumber);
+            query.addBindValue(date);
+            query.addBindValue(timeSlot);
+            query.exec();
+        }
+    }
+    loadReservations();
 }
