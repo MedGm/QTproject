@@ -20,7 +20,9 @@ SelectionWindow::SelectionWindow(QWidget *parent)
     connect(ui->professorsButton, &QPushButton::clicked, this, &SelectionWindow::onProfessorsButtonClicked);
     connect(ui->demandsButton, &QPushButton::clicked, this, &SelectionWindow::onDemandsButtonClicked);
     connect(ui->reservationsButton, &QPushButton::clicked, this, &SelectionWindow::onReservationsButtonClicked);
-    
+    connect(ui->licenceButton, &QPushButton::clicked, this, &SelectionWindow::onLicenceButtonClicked);
+    connect(ui->masterButton, &QPushButton::clicked, this, &SelectionWindow::onMasterButtonClicked);
+
     professorsWindow = nullptr;
     demandsWindow = nullptr;
     reservationsWindow = nullptr;
@@ -97,4 +99,14 @@ void SelectionWindow::onReservationsButtonClicked()
         reservationsWindow = new ReservationsWindow(this);
     }
     reservationsWindow->show();
+}
+
+void SelectionWindow::onLicenceButtonClicked(){
+    licence *licencew = new licence(this);
+    licencew->show();
+}
+
+void SelectionWindow::onMasterButtonClicked(){
+    Master *MasterWindow = new Master(this);
+    MasterWindow->show();
 }

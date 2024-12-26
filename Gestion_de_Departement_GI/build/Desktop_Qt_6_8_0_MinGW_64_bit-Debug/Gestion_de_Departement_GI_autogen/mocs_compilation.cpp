@@ -5,6 +5,7 @@
 #include "EWIEGA46WW/moc_licence.cpp"
 #include "EWIEGA46WW/moc_logindialog.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
+#include "EWIEGA46WW/moc_master.cpp"
 #include "EWIEGA46WW/moc_professorswindow.cpp"
 #include "EWIEGA46WW/moc_reservationswindow.cpp"
 #include "EWIEGA46WW/moc_selectionwindow.cpp"

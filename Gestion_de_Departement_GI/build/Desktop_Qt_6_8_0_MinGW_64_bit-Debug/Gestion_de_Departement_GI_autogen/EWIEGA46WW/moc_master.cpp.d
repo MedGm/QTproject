@@ -1,5 +1,6 @@
-C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen/EWIEGA46WW/moc_professorswindow.cpp: C:/Users/moonx/Documents/Gestion_de_Departement_GI/professorswindow.h \
+C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen/EWIEGA46WW/moc_master.cpp: C:/Users/moonx/Documents/Gestion_de_Departement_GI/master.h \
   C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen/moc_predefs.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
   D:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \
@@ -46,6 +47,7 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   D:/Qt/6.8.0/mingw_64/include/QtCore/qglobalstatic.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qhash.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qhashfunctions.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qiodevice.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qiodevicebase.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qitemselectionmodel.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qiterable.h \
@@ -119,6 +121,7 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtversionchecks.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtypeinfo.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtypes.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qurl.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qutf8stringview.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qvariant.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qvarlengtharray.h \
@@ -138,12 +141,14 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   D:/Qt/6.8.0/mingw_64/include/QtGui/qkeysequence.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qpaintdevice.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qpalette.h \
+  D:/Qt/6.8.0/mingw_64/include/QtGui/qpicture.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qpixelformat.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qpixmap.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qpolygon.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qregion.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qrgb.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qrgba64.h \
+  D:/Qt/6.8.0/mingw_64/include/QtGui/qtextdocument.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qtgui-config.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qtguiexports.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qtguiglobal.h \
@@ -152,22 +157,27 @@ C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_
   D:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
   D:/Qt/6.8.0/mingw_64/include/QtSql/QSqlDatabase \
-  D:/Qt/6.8.0/mingw_64/include/QtSql/QSqlQuery \
   D:/Qt/6.8.0/mingw_64/include/QtSql/qsqldatabase.h \
-  D:/Qt/6.8.0/mingw_64/include/QtSql/qsqlquery.h \
   D:/Qt/6.8.0/mingw_64/include/QtSql/qtsql-config.h \
   D:/Qt/6.8.0/mingw_64/include/QtSql/qtsqlexports.h \
   D:/Qt/6.8.0/mingw_64/include/QtSql/qtsqlglobal.h \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/QComboBox \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/QLabel \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QMainWindow \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/QPushButton \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QStackedWidget \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QTableWidget \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractbutton.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractitemview.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractslider.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/qcombobox.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qframe.h \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/qlabel.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qmainwindow.h \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/qpushbutton.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qrubberband.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qslider.h \
