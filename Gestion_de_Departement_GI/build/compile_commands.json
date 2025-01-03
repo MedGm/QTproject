@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o -c /home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp",
+  "file": "/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o -c /home/medgm/Downloads/new/main.cpp",
+  "file": "/home/medgm/Downloads/new/main.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o -c /home/medgm/Downloads/new/mainwindow.cpp",
+  "file": "/home/medgm/Downloads/new/mainwindow.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o -c /home/medgm/Downloads/new/logindialog.cpp",
+  "file": "/home/medgm/Downloads/new/logindialog.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o -c /home/medgm/Downloads/new/selectionwindow.cpp",
+  "file": "/home/medgm/Downloads/new/selectionwindow.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o -c /home/medgm/Downloads/new/cyclemanagement.cpp",
+  "file": "/home/medgm/Downloads/new/cyclemanagement.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o -c /home/medgm/Downloads/new/databasemanager.cpp",
+  "file": "/home/medgm/Downloads/new/databasemanager.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o -c /home/medgm/Downloads/new/studentdialog.cpp",
+  "file": "/home/medgm/Downloads/new/studentdialog.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o -c /home/medgm/Downloads/new/demandswindow.cpp",
+  "file": "/home/medgm/Downloads/new/demandswindow.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o -c /home/medgm/Downloads/new/professorswindow.cpp",
+  "file": "/home/medgm/Downloads/new/professorswindow.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o -c /home/medgm/Downloads/new/reservationswindow.cpp",
+  "file": "/home/medgm/Downloads/new/reservationswindow.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o -c /home/medgm/Downloads/new/database.cpp",
+  "file": "/home/medgm/Downloads/new/database.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o -c /home/medgm/Downloads/new/licence.cpp",
+  "file": "/home/medgm/Downloads/new/licence.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o -c /home/medgm/Downloads/new/master.cpp",
+  "file": "/home/medgm/Downloads/new/master.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o"
+},
+{
+  "directory": "/home/medgm/Downloads/new/build",
+  "command": "/usr/bin/clang++-18 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WIDGETS_LIB -I/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include -isystem /usr/include/x86_64-linux-gnu/qt6/QtCore -isystem /usr/include/x86_64-linux-gnu/qt6 -isystem /usr/lib/x86_64-linux-gnu/qt6/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt6/QtGui -isystem /usr/include/x86_64-linux-gnu/qt6/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt6/QtSql -g -std=gnu++17 -fPIC -o CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o -c /home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp",
+  "file": "/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp",
+  "output": "CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o"
+}
+]

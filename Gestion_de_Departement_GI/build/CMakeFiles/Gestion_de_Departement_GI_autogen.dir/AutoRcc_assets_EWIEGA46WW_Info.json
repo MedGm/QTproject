@@ -1,0 +1,35 @@
+{
+	"BUILD_DIR" : "/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen",
+	"CMAKE_BINARY_DIR" : "/home/medgm/Downloads/new/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/medgm/Downloads/new/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/medgm/Downloads/new",
+	"CMAKE_SOURCE_DIR" : "/home/medgm/Downloads/new",
+	"GENERATOR" : "Unix Makefiles",
+	"INCLUDE_DIR" : "/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/medgm/Downloads/new/assets/licence.png",
+		"/home/medgm/Downloads/new/assets/emplois1.png",
+		"/home/medgm/Downloads/new/assets/etidai.png",
+		"/home/medgm/Downloads/new/assets/etad.png",
+		"/home/medgm/Downloads/new/assets/padlock.png",
+		"/home/medgm/Downloads/new/assets/fst.jpeg",
+		"/home/medgm/Downloads/new/assets/user.png",
+		"/home/medgm/Downloads/new/assets/emplois5.png",
+		"/home/medgm/Downloads/new/assets/cycle.png",
+		"/home/medgm/Downloads/new/assets/emplois3.png",
+		"/home/medgm/Downloads/new/assets/log-uae.png",
+		"/home/medgm/Downloads/new/assets/useradminlogo.png",
+		"/home/medgm/Downloads/new/assets/master.png"
+	],
+	"LOCK_FILE" : "/home/medgm/Downloads/new/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutoRcc_assets_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "assets" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_assets.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/medgm/Downloads/new/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutoRcc_assets_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/medgm/Downloads/new/assets.qrc",
+	"VERBOSITY" : 0
+}

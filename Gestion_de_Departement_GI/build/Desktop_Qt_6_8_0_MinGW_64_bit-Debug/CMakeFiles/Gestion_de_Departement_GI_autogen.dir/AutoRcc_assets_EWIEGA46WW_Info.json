@@ -1,0 +1,37 @@
+{
+	"BUILD_DIR" : "C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/moonx/Documents/Gestion_de_Departement_GI",
+	"CMAKE_SOURCE_DIR" : "C:/Users/moonx/Documents/Gestion_de_Departement_GI",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/licence.png",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/emplois1.png",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/etidai.png",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/etad.png",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/padlock.png",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/fst.jpeg",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/user.png",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/emplois5.png",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/cycle.png",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/emplois3.png",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/log-uae.png",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/useradminlogo.png",
+		"C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets/master.png"
+	],
+	"LOCK_FILE" : "C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutoRcc_assets_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "assets" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_assets.cpp",
+	"RCC_EXECUTABLE" : "D:/Qt/6.8.0/mingw_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/moonx/Documents/Gestion_de_Departement_GI/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutoRcc_assets_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/moonx/Documents/Gestion_de_Departement_GI/assets.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

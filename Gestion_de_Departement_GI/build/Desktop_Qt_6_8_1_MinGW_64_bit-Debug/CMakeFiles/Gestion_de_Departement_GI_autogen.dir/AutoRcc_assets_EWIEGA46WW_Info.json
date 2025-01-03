@@ -1,0 +1,37 @@
+{
+	"BUILD_DIR" : "C:/Users/Lenovo/Documents/new/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Lenovo/Documents/new/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Lenovo/Documents/new/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Lenovo/Documents/new",
+	"CMAKE_SOURCE_DIR" : "C:/Users/Lenovo/Documents/new",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "C:/Users/Lenovo/Documents/new/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/Gestion_de_Departement_GI_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/Lenovo/Documents/new/assets/licence.png",
+		"C:/Users/Lenovo/Documents/new/assets/emplois1.png",
+		"C:/Users/Lenovo/Documents/new/assets/etidai.png",
+		"C:/Users/Lenovo/Documents/new/assets/etad.png",
+		"C:/Users/Lenovo/Documents/new/assets/padlock.png",
+		"C:/Users/Lenovo/Documents/new/assets/fst.jpeg",
+		"C:/Users/Lenovo/Documents/new/assets/user.png",
+		"C:/Users/Lenovo/Documents/new/assets/emplois5.png",
+		"C:/Users/Lenovo/Documents/new/assets/cycle.png",
+		"C:/Users/Lenovo/Documents/new/assets/emplois3.png",
+		"C:/Users/Lenovo/Documents/new/assets/log-uae.png",
+		"C:/Users/Lenovo/Documents/new/assets/useradminlogo.png",
+		"C:/Users/Lenovo/Documents/new/assets/master.png"
+	],
+	"LOCK_FILE" : "C:/Users/Lenovo/Documents/new/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutoRcc_assets_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "assets" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_assets.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.8.1/mingw_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/Lenovo/Documents/new/build/Desktop_Qt_6_8_1_MinGW_64_bit-Debug/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutoRcc_assets_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/Lenovo/Documents/new/assets.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}
