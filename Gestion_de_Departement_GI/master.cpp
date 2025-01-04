@@ -1,16 +1,28 @@
 #include "master.h"
 #include <QMessageBox>
+<<<<<<< HEAD
 #include "database.h"
+=======
+#include <QSqlQuery>
+#include <QSqlError>
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 #include <QDebug>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QSet>
 #include <QComboBox>
+<<<<<<< HEAD
 #include <QFile>
 #include <QLineEdit>
 #include <QFormLayout>
 #include <QSpinBox>
 #include <QHeaderView>
+=======
+
+
+
+
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 
 
 // Constructeur de Master
@@ -19,6 +31,7 @@ Master::Master(QWidget *parent) : QMainWindow(parent) {
     this->setWindowTitle("Gestion de la Filière Master");
     this->resize(1050, 678);
 
+<<<<<<< HEAD
 
     // Appliquer un style général à l'application
     this->setStyleSheet(R"(
@@ -107,6 +120,8 @@ Master::Master(QWidget *parent) : QMainWindow(parent) {
     //stageTable = new QTableWidget(this);
     //setupStageTable();
 
+=======
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
     // Création des widgets principaux
     QWidget *centralWidget = new QWidget(this);
     QVBoxLayout *mainLayout = new QVBoxLayout(centralWidget);
@@ -122,17 +137,30 @@ Master::Master(QWidget *parent) : QMainWindow(parent) {
     etudiantButton = new QPushButton("Étudiant");
     formLayout->addWidget(etudiantButton);
 
+<<<<<<< HEAD
     stageButton = new QPushButton("Stage PFE/PFA");
     formLayout->addWidget(stageButton);
 
     addStage = new QPushButton("Ajouter Stage");
     formLayout->addWidget(addStage);
+=======
+    moduleButton = new QPushButton("Module");
+    formLayout->addWidget(moduleButton);
+
+    profButton = new QPushButton("Professeur");
+    formLayout->addWidget(profButton);
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 
     emploitButton = new QPushButton("Emploi du temps");
     formLayout->addWidget(emploitButton);
 
+<<<<<<< HEAD
     logout = new QPushButton("Déconnexion");
     formLayout->addWidget(logout);
+=======
+    stageButton = new QPushButton("Stage PFE/PFA");
+    formLayout->addWidget(stageButton);
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 
     mainLayout->addLayout(formLayout);
 
@@ -151,15 +179,23 @@ Master::Master(QWidget *parent) : QMainWindow(parent) {
     studentPage = new QWidget(this);
     QVBoxLayout *studentLayout = new QVBoxLayout(studentPage);
 
+<<<<<<< HEAD
     /*studentTable = new QTableWidget();
     studentTable->setMaximumSize(1100, 600);
     studentTable->setColumnCount(4);
     studentTable->setHorizontalHeaderLabels({"ID", "Prénom", "Nom", "Année"});*/
+=======
+    studentTable = new QTableWidget();
+    studentTable->setMaximumSize(1100, 600);
+    studentTable->setColumnCount(4);
+    studentTable->setHorizontalHeaderLabels({"ID", "Prénom", "Nom", "Année"});
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
     studentLayout->addWidget(studentTable);
 
     studentPage->setLayout(studentLayout);
     stackedWidget->addWidget(studentPage);
 
+<<<<<<< HEAD
 
     stagePage = new QWidget(this);
     QVBoxLayout *stageLayout = new QVBoxLayout(stagePage);
@@ -168,6 +204,8 @@ Master::Master(QWidget *parent) : QMainWindow(parent) {
     stackedWidget->addWidget(stagePage);
 
 
+=======
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
     emploiPage = new QWidget(this);
     QVBoxLayout *emploiLayout = new QVBoxLayout(emploiPage);
 
@@ -185,6 +223,7 @@ Master::Master(QWidget *parent) : QMainWindow(parent) {
 
     // Connexions des boutons
     connect(etudiantButton, &QPushButton::clicked, this, &Master::showStudents);
+<<<<<<< HEAD
     connect(addButton, &QPushButton::clicked, this, &Master::addStudent);
     connect(delButton, &QPushButton::clicked, this, &Master::delStudent);
     connect(emploitButton, &QPushButton::clicked, this, &Master::showSchedule);
@@ -194,11 +233,25 @@ Master::Master(QWidget *parent) : QMainWindow(parent) {
     connect(addStage, &QPushButton::clicked, this , &Master::AjouterStage);
 
 
+=======
+    connect(emploitButton, &QPushButton::clicked, this, &Master::showSchedule);
+    connect(profButton, &QPushButton::clicked, this, &Master::deleteStudent);
+    connect(filiereComboBox, &QComboBox::currentTextChanged, this, &Master::onComboBoxChanged);
+
+    // Connexion à la base de données
+    if (!connectToDatabase()) {
+        QMessageBox::critical(this, "Erreur", "Connexion à la base de données échouée !");
+        return;
+    }
+
+    // Charger les étudiants par défaut
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
     loadStudents(filiereComboBox->currentText());
 }
 
 // Destructeur
 Master::~Master() {
+<<<<<<< HEAD
     /*if (db.isOpen()) {
         db.close();
     }*/
@@ -684,11 +737,48 @@ void Master::addStudent() {
 
 
 
+=======
+    if (db.isOpen()) {
+        db.close();
+    }
+}
+
+// Reste de vos fonctions...
+
+bool Master::connectToDatabase() {
+    db = QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName("master.db");
+
+    if (!db.open()) {
+        qDebug() << "Erreur : " << db.lastError().text();
+        return false;
+    }
+    return true;
+}
+
+void Master::addStudent() {
+    /*QSqlQuery query;
+    query.prepare("INSERT INTO AISD2 (name, cne) VALUES (?, ?)");
+    query.addBindValue("salah");  // Exemple de données
+    query.addBindValue("12345678");
+
+    if (!query.exec()) {
+        QMessageBox::critical(this, "Erreur", "Échec de l'ajout de l'étudiant !");
+        qDebug() << "Erreur : " << query.lastError().text();
+        return;
+    }*/
+
+    QMessageBox::information(this, "Succès", "Étudiant ajouté avec succès !");
+    loadStudents(filiereComboBox->currentText());
+}
+
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 void Master::updateStudent() {
     QMessageBox::information(this, "Mise à jour", "Mise à jour de l'étudiant (à implémenter).");
 }
 
 
+<<<<<<< HEAD
 
 
 
@@ -817,25 +907,58 @@ void Master::showSchedule() {
     emploits(level);  // Charger l'emploi du temps pour le niveau sélectionné
     //stackedWidget->setCurrentWidget(emploiPage);  // Basculer sur la page emploi du temps
     //emploits(level);
+=======
+void Master::emploits(const QString &level) {
+    QString imagePath;
+    if (level == "SBD1") {
+        imagePath = ":/assets/SBD1.png";
+    } else if (level == "SBD2") {
+        imagePath = ":/assets/SBD2.png";
+    } else if (level == "AISD1") {
+        imagePath = ":/assets/AISD1.png";
+    } else if (level == "AISD2") {
+        imagePath = ":/assets/AISD2.png";
+    }
+
+    QPixmap schedule(imagePath);
+    if (!schedule.isNull()) {
+        emploiLabel->setPixmap(schedule.scaled(emploiLabel->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    }
+}
+
+
+void Master::showSchedule() {
+    QString level = filiereComboBox->currentText();
+    emploits(level);  // Charger l'emploi du temps pour le niveau sélectionné
+    stackedWidget->setCurrentWidget(emploiPage);  // Basculer sur la page emploi du temps
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 }
 
 
 void Master::showStudents() {
     stackedWidget->setCurrentWidget(studentPage);  // Basculer sur la page des étudiants
+<<<<<<< HEAD
     studentTable->setVisible(true);
     QString level = filiereComboBox->currentText();
     loadStudents(level);
     stackedWidget->setCurrentWidget(studentPage);
+=======
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 }
 
 
 void Master::deleteStudent() {
+<<<<<<< HEAD
 
     this->close();
+=======
+    QMessageBox::information(this, "Suppression", "Suppression de l'étudiant (à implémenter).");
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 }
 
 
 void Master::onComboBoxChanged() {
+<<<<<<< HEAD
     QString level = filiereComboBox->currentText();
     QWidget *currentWidget = stackedWidget->currentWidget();
 
@@ -853,6 +976,15 @@ void Master::onComboBoxChanged() {
 void Master::loadStudents(const QString& level) {
     // Vérifier si le niveau est valide
     //QString level = filiereComboBox->currentText();
+=======
+    // Recharger les étudiants en fonction de la sélection dans la ComboBox
+    loadStudents(filiereComboBox->currentText());
+}
+
+
+void Master::loadStudents(const QString &level) {
+    // Vérifier si le niveau est valide
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
     QSet<QString> validLevels = {"SBD1", "SBD2", "AISD1", "AISD2"};
     if (!validLevels.contains(level)) {
         QMessageBox::critical(this, "Erreur", "Niveau invalide !");
@@ -860,6 +992,7 @@ void Master::loadStudents(const QString& level) {
         return;
     }
 
+<<<<<<< HEAD
     // Vider la table avant d'ajouter de nouvelles données
     studentTable->setRowCount(0); // Supprime toutes les lignes
 
@@ -928,4 +1061,31 @@ void Master::loadStage(const QString& level) {
     }
 
     qDebug() << "Étudiants chargés avec succès depuis le fichier : " << level << ".txt";
+=======
+    // Construire et exécuter la requête SQL
+    /*QString queryStr = QString("SELECT id, name, cne, cin FROM %1").arg(level);
+    QSqlQuery query(queryStr);
+
+    if (!query.exec()) {
+        QMessageBox::critical(this, "Erreur", "Échec du chargement des étudiants !");
+        qDebug() << "Erreur lors de l'exécution de la requête : " << query.lastError().text();
+        return;
+    }
+
+    // Vider le tableau avant d'ajouter de nouvelles données
+    studentTable->setRowCount(0);
+
+    // Remplir le tableau avec les données de la base
+    int row = 0;
+    while (query.next()) {
+        studentTable->insertRow(row);
+        studentTable->setItem(row, 0, new QTableWidgetItem(query.value(0).toString()));
+        studentTable->setItem(row, 1, new QTableWidgetItem(query.value(1).toString()));
+        studentTable->setItem(row, 2, new QTableWidgetItem(query.value(2).toString()));
+        studentTable->setItem(row, 3, new QTableWidgetItem(query.value(3).toString()));
+        row++;
+    }*/
+
+    qDebug() << "Étudiants chargés avec succès depuis la table : " << level;
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 }

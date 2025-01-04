@@ -2,15 +2,21 @@
 #include "ui_cyclemanagement.h"
 #include "selectionwindow.h"
 #include "studentdialog.h"
+<<<<<<< HEAD
 #include "database.h"
+=======
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 #include <QLabel>
 #include <QMessageBox>
 #include <QInputDialog>
 #include <QFormLayout>  
 #include <QTextEdit>
 #include<QSqlError>
+<<<<<<< HEAD
 #include <QHeaderView>
 
+=======
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 
 cyclemanagement::cyclemanagement(QWidget *parent)
     : QMainWindow(parent)
@@ -165,6 +171,7 @@ void cyclemanagement::setupUI()
 
 void cyclemanagement::onScheduleButtonClicked()
 {
+<<<<<<< HEAD
     QString level = ui->levelComboBox->currentText();
     showSchedule(level);
 }
@@ -256,6 +263,31 @@ void cyclemanagement::showSchedule(const QString& niveau)
 }
 
 
+=======
+    showSchedule(ui->levelComboBox->currentText());
+    ui->mainStack->setCurrentWidget(schedulePageWidget);
+}
+
+void cyclemanagement::showSchedule(const QString& level) // fonction d emploi
+{
+    QString imagePath;
+    if (level == "LSI 1") {
+        imagePath = ":/assets/emplois1.png";
+    } else if (level == "LSI 2") {
+        imagePath = ":/assets/emplois3.png";
+    } else if (level == "LSI 3") {
+        imagePath = ":/assets/emplois5.png";
+    }
+    
+    QPixmap schedule(imagePath);
+    if (!schedule.isNull()) {
+        scheduleLabel->setPixmap(schedule.scaled(scheduleLabel->size(), 
+                                               Qt::KeepAspectRatio, 
+                                               Qt::SmoothTransformation));
+    }
+}
+
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 void cyclemanagement::resizeEvent(QResizeEvent* event)
 {
     QMainWindow::resizeEvent(event);
@@ -269,6 +301,7 @@ void cyclemanagement::resizeEvent(QResizeEvent* event)
     }
 }
 
+<<<<<<< HEAD
 
 
 
@@ -294,10 +327,18 @@ void cyclemanagement::onLevelChanged(int index)
     } else if (currentWidget == internshipsPageWidget) {
         loadInternships();
     } else {
+=======
+void cyclemanagement::onLevelChanged(int index) // fonction qui gére le changement de niveau du filiere LSI
+{
+    QString level = ui->levelComboBox->currentText();
+    loadStudents(level);
+    if (ui->mainStack->currentWidget() == schedulePageWidget) {
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
         showSchedule(level);
     }
 }
 
+<<<<<<< HEAD
 
 
 
@@ -309,6 +350,8 @@ void cyclemanagement::onLevelChanged(int index)
 
 
 
+=======
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 void cyclemanagement::onLogoutClicked() // fonction de button de logout
 {
     SelectionWindow *selectionWindow = new SelectionWindow();

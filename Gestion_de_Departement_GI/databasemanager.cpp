@@ -27,6 +27,7 @@ bool DatabaseManager::initDatabase()
         qDebug() << "Error: connection with database failed";
         return false;
     }
+<<<<<<< HEAD
     if (!createTables()) {
         return false;
     }
@@ -34,6 +35,9 @@ bool DatabaseManager::initDatabase()
            initializeLSI2Data() && 
            initializeLSI3Data() && 
            initializeProfessorsData();
+=======
+    return createTables();
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 }
 
 bool DatabaseManager::createTables()
@@ -109,6 +113,7 @@ bool DatabaseManager::createTables()
     return true;
 }
 
+<<<<<<< HEAD
 bool DatabaseManager::initializeLSI1Data()
 {
     // First, anshufu wash la table LSI1 kayna fiha data
@@ -323,6 +328,8 @@ bool DatabaseManager::initializeProfessorsData()
     }
 }
 
+=======
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 bool DatabaseManager::addStudent(const QString& level, const QString& name, const QString& cne, const QString& cin)
 {
     QSqlQuery query;

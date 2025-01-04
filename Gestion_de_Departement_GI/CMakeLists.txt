@@ -30,6 +30,7 @@ qt_add_executable(Gestion_de_Departement_GI
     ad_data.txt database.cpp database.h idai_data.txt licence.cpp licence.h licence.ui
     assets/etad.png assets/etidai.png
     master.cpp master.h
+<<<<<<< HEAD
     AISD1.txt
     AISD2.txt
     SBD1.txt SBD2.txt
@@ -40,6 +41,8 @@ qt_add_executable(Gestion_de_Departement_GI
 
 
 
+=======
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 )
 
 target_link_libraries(Gestion_de_Departement_GI PRIVATE

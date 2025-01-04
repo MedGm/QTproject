@@ -29,6 +29,10 @@ private slots:
     void onProfessorsButtonClicked();
     void onDemandsButtonClicked();
     void onReservationsButtonClicked();
+<<<<<<< HEAD
+=======
+
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 private:
     Ui::SelectionWindow *ui;
     void setupIcons();
@@ -36,7 +40,10 @@ private:
     ProfessorsWindow* professorsWindow;
     DemandsWindow* demandsWindow;
     ReservationsWindow* reservationsWindow;
+<<<<<<< HEAD
 
+=======
+>>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 };
 
 #endif // SELECTIONWINDOW_H
