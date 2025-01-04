@@ -1,34 +1,34 @@
 Gestion_de_Departement_GI_autogen/timestamp: \
-	/home/medgm/Downloads/new/CMakeLists.txt \
-	/home/medgm/Downloads/new/assets.qrc \
-	/home/medgm/Downloads/new/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
-	/home/medgm/Downloads/new/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
-	/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/moc_predefs.h \
-	/home/medgm/Downloads/new/cyclemanagement.cpp \
-	/home/medgm/Downloads/new/cyclemanagement.h \
-	/home/medgm/Downloads/new/database.cpp \
-	/home/medgm/Downloads/new/database.h \
-	/home/medgm/Downloads/new/databasemanager.cpp \
-	/home/medgm/Downloads/new/databasemanager.h \
-	/home/medgm/Downloads/new/demandswindow.cpp \
-	/home/medgm/Downloads/new/demandswindow.h \
-	/home/medgm/Downloads/new/licence.cpp \
-	/home/medgm/Downloads/new/licence.h \
-	/home/medgm/Downloads/new/logindialog.cpp \
-	/home/medgm/Downloads/new/logindialog.h \
-	/home/medgm/Downloads/new/main.cpp \
-	/home/medgm/Downloads/new/mainwindow.cpp \
-	/home/medgm/Downloads/new/mainwindow.h \
-	/home/medgm/Downloads/new/master.cpp \
-	/home/medgm/Downloads/new/master.h \
-	/home/medgm/Downloads/new/professorswindow.cpp \
-	/home/medgm/Downloads/new/professorswindow.h \
-	/home/medgm/Downloads/new/reservationswindow.cpp \
-	/home/medgm/Downloads/new/reservationswindow.h \
-	/home/medgm/Downloads/new/selectionwindow.cpp \
-	/home/medgm/Downloads/new/selectionwindow.h \
-	/home/medgm/Downloads/new/studentdialog.cpp \
-	/home/medgm/Downloads/new/studentdialog.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/CMakeLists.txt \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/assets.qrc \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/3.28.3/CMakeSystem.cmake \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/moc_predefs.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/cyclemanagement.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/cyclemanagement.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/database.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/database.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/databasemanager.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/databasemanager.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/demandswindow.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/demandswindow.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/licence.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/licence.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/logindialog.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/logindialog.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/main.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/mainwindow.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/mainwindow.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/master.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/master.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/professorswindow.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/professorswindow.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/reservationswindow.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/reservationswindow.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/selectionwindow.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/selectionwindow.h \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/studentdialog.cpp \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/studentdialog.h \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/errno-base.h \
 	/usr/include/asm-generic/errno.h \
@@ -349,6 +349,7 @@ Gestion_de_Departement_GI_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qatomic_cxx11.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qbasicatomic.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
@@ -376,6 +377,7 @@ Gestion_de_Departement_GI_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qflags.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qforeach.h \
+	/usr/include/x86_64-linux-gnu/qt6/QtCore/qgenericatomic.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qglobalstatic.h \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
@@ -548,15 +550,9 @@ Gestion_de_Departement_GI_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/sys/select.h \
 	/usr/include/x86_64-linux-gnu/sys/syscall.h \
 	/usr/include/x86_64-linux-gnu/sys/types.h \
-	/usr/lib/llvm-18/lib/clang/18/include/__stdarg___gnuc_va_list.h \
-	/usr/lib/llvm-18/lib/clang/18/include/__stddef_null.h \
-	/usr/lib/llvm-18/lib/clang/18/include/__stddef_offsetof.h \
-	/usr/lib/llvm-18/lib/clang/18/include/__stddef_ptrdiff_t.h \
-	/usr/lib/llvm-18/lib/clang/18/include/__stddef_size_t.h \
-	/usr/lib/llvm-18/lib/clang/18/include/__stddef_wchar_t.h \
-	/usr/lib/llvm-18/lib/clang/18/include/stdarg.h \
-	/usr/lib/llvm-18/lib/clang/18/include/stdbool.h \
-	/usr/lib/llvm-18/lib/clang/18/include/stddef.h \
+	/usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+	/usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h \
+	/usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6/3rdparty/kwin/FindXKB.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapAtomic.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6/FindWrapOpenGL.cmake \
@@ -693,11 +689,8 @@ Gestion_de_Departement_GI_autogen/timestamp: \
 	/usr/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-	/usr/share/cmake-3.28/Modules/Compiler/Clang-CXX.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
-	/usr/share/cmake-3.28/Modules/Compiler/Clang-FindBinUtils.cmake \
-	/usr/share/cmake-3.28/Modules/Compiler/Clang.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake \
@@ -707,6 +700,8 @@ Gestion_de_Departement_GI_autogen/timestamp: \
 	/usr/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
+	/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake \
+	/usr/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/GNU.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
 	/usr/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake \
@@ -744,15 +739,14 @@ Gestion_de_Departement_GI_autogen/timestamp: \
 	/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
 	/usr/share/cmake-3.28/Modules/Internal/FeatureTesting.cmake \
 	/usr/share/cmake-3.28/Modules/MacroAddFileDependencies.cmake \
-	/usr/share/cmake-3.28/Modules/Platform/Linux-Clang-CXX.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/Linux-Determine-CXX.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/Linux.cmake \
 	/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake \
-	/home/medgm/Downloads/new/cyclemanagement.ui \
-	/home/medgm/Downloads/new/logindialog.ui \
-	/home/medgm/Downloads/new/mainwindow.ui \
-	/home/medgm/Downloads/new/selectionwindow.ui \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/cyclemanagement.ui \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/logindialog.ui \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/mainwindow.ui \
+	/home/medgm/Desktop/Gestion_de_Departement_GI/selectionwindow.ui \
 	/usr/bin/cmake

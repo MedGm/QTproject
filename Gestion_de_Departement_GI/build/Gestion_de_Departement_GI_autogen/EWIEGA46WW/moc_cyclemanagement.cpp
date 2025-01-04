@@ -37,7 +37,7 @@ struct qt_meta_stringdata_cyclemanagement_t {
     char stringdata6[23];
     char stringdata7[24];
     char stringdata8[13];
-    char stringdata9[6];
+    char stringdata9[7];
     char stringdata10[24];
     char stringdata11[27];
     char stringdata12[23];
@@ -56,11 +56,11 @@ Q_CONSTINIT static const qt_meta_stringdata_cyclemanagement_t qt_meta_stringdata
         QT_MOC_LITERAL(74, 22),  // "onDeleteStudentClicked"
         QT_MOC_LITERAL(97, 23),  // "onScheduleButtonClicked"
         QT_MOC_LITERAL(121, 12),  // "showSchedule"
-        QT_MOC_LITERAL(134, 5),  // "level"
-        QT_MOC_LITERAL(140, 23),  // "onStudentsButtonClicked"
-        QT_MOC_LITERAL(164, 26),  // "onInternshipsButtonClicked"
-        QT_MOC_LITERAL(191, 22),  // "onAddInternshipClicked"
-        QT_MOC_LITERAL(214, 25)   // "onDeleteInternshipClicked"
+        QT_MOC_LITERAL(134, 6),  // "niveau"
+        QT_MOC_LITERAL(141, 23),  // "onStudentsButtonClicked"
+        QT_MOC_LITERAL(165, 26),  // "onInternshipsButtonClicked"
+        QT_MOC_LITERAL(192, 22),  // "onAddInternshipClicked"
+        QT_MOC_LITERAL(215, 25)   // "onDeleteInternshipClicked"
     },
     "cyclemanagement",
     "onLevelChanged",
@@ -71,7 +71,7 @@ Q_CONSTINIT static const qt_meta_stringdata_cyclemanagement_t qt_meta_stringdata
     "onDeleteStudentClicked",
     "onScheduleButtonClicked",
     "showSchedule",
-    "level",
+    "niveau",
     "onStudentsButtonClicked",
     "onInternshipsButtonClicked",
     "onAddInternshipClicked",

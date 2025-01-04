@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/medgm/Downloads/new
+CMAKE_SOURCE_DIR = /home/medgm/Desktop/Gestion_de_Departement_GI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/medgm/Downloads/new/build
+CMAKE_BINARY_DIR = /home/medgm/Desktop/Gestion_de_Departement_GI/build
 
 # Utility rule file for Gestion_de_Departement_GI_autogen_timestamp_deps.
 
@@ -66,9 +66,9 @@ include CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps.dir/compiler
 # Include the progress variables for this target.
 include CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps.dir/progress.make
 
-CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
-CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
+CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
+CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
 CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
 CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Sql.so.6.4.2
 
@@ -85,6 +85,6 @@ CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps.dir/depend:
-	cd /home/medgm/Downloads/new/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/medgm/Downloads/new /home/medgm/Downloads/new /home/medgm/Downloads/new/build /home/medgm/Downloads/new/build /home/medgm/Downloads/new/build/CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/medgm/Desktop/Gestion_de_Departement_GI/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/medgm/Desktop/Gestion_de_Departement_GI /home/medgm/Desktop/Gestion_de_Departement_GI /home/medgm/Desktop/Gestion_de_Departement_GI/build /home/medgm/Desktop/Gestion_de_Departement_GI/build /home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps.dir/depend
 

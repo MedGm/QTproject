@@ -136,7 +136,7 @@ bool MasterManagement::writeDataToFile(const QStringList& data) {
 
 
     QString level = filiereComboBox->currentText();
-    QString filename = QString("C:/Users/Lenovo/Documents/new/%1.txt").arg(level);
+    QString filename = QString("/home/medgm/Desktop/Gestion_de_Departement_GI/%1.txt").arg(level);
     QFile file(filename);
 
     if (!file.open(QIODevice::Append | QIODevice::Text)) {
@@ -154,8 +154,8 @@ bool MasterManagement::writeDataToFile(const QStringList& data) {
 
 bool MasterManagement::readDataFromFile(QList<QStringList>& studentsData) {
     QString level = filiereComboBox->currentText();
-    QString filename = QString("C:/Users/Lenovo/Documents/new/%1.txt").arg(level);
-    if (filename != "C:/Users/Lenovo/Documents/new/SBD1.txt" && filename != "C:/Users/Lenovo/Documents/new/SBD2.txt" && filename != "C:/Users/Lenovo/Documents/new/AISD1.txt" && filename != "C:/Users/Lenovo/Documents/new/AISD2.txt") {
+    QString filename = QString("/home/medgm/Desktop/Gestion_de_Departement_GI/%1.txt").arg(level);
+    if (filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/SBD1.txt" && filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/SBD2.txt" && filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/AISD1.txt" && filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/AISD2.txt") {
         qDebug() << "Error: Invalid file path!";
         return false;
     }

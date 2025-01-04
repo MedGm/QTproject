@@ -27,7 +27,13 @@ bool DatabaseManager::initDatabase()
         qDebug() << "Error: connection with database failed";
         return false;
     }
-    return createTables();
+    if (!createTables()) {
+        return false;
+    }
+    return initializeLSI1Data() && 
+           initializeLSI2Data() && 
+           initializeLSI3Data() && 
+           initializeProfessorsData();
 }
 
 bool DatabaseManager::createTables()
@@ -101,6 +107,220 @@ bool DatabaseManager::createTables()
     }
 
     return true;
+}
+
+bool DatabaseManager::initializeLSI1Data()
+{
+    // First, anshufu wash la table LSI1 kayna fiha data
+    QSqlQuery checkQuery("SELECT COUNT(*) FROM LSI1");
+    if (checkQuery.exec() && checkQuery.next() && checkQuery.value(0).toInt() > 0) {
+        //fhalat ma kan deja kayna data bla mat3ayet
+        return true;
+    }
+
+    QStringList students = {
+        "ELGORRIM MOHAMED",
+        "BAHADDOU DOUAA",
+        "YOUSSAHOU OUEDRAOGO",
+        "OUALLALI MOHAMED AMINE",
+        "KCHIBAL ISMAIL",
+        "ANDRIAMASY LORRAINE AGNES RAHELIARISOA",
+        "RADAH HASSAN",
+        "UTHMAN JUNAID",
+        "AHMANE YAHYA",
+        "FAIK MAROUANE",
+        "SALHI MOHAMMED",
+        "ALLALI FATIMA-EZZAHRA",
+        "EL AZZOUZI ACHRAF",
+        "LAFDIL NOHAYLA",
+        "ESSALHI SALMA",
+        "HOUZANE IKRAME",
+        "KHAZRI SALAH EDDINE",
+        "MOHAND OMAR MOUSSA",
+        "BOUZID MINA",
+        "CHIKH IMANE",
+        "GANNOUNE OMAR",
+        "LAGHRISSI MEHDI",
+        "KADDAR MOHAMED ILIASS",
+        "KAMOUSS YASSINE",
+        "AZHICH SALMA",
+        "BADR BERQIA",
+        "KANTOS MOHAMED",
+        "IBRAHIM ZARYOUH"
+    };
+
+    db.transaction();
+    QSqlQuery query;
+    query.prepare("INSERT INTO LSI1 (name, cne, cin) VALUES (?, ?, ?)");
+
+    bool success = true;
+    for (const QString& student : students) {
+        query.addBindValue(student);
+        // Generate unique CNE and CIN for each student
+        QString cne = "LSI1" + QString::number(qHash(student) % 100000);
+        QString cin = "CIN" + QString::number(qHash(student + "salt") % 100000);
+        query.addBindValue(cne);
+        query.addBindValue(cin);
+        
+        if (!query.exec()) {
+            qDebug() << "Error inserting student:" << student << query.lastError();
+            success = false;
+            break;
+        }
+    }
+
+    if (success) {
+        db.commit();
+        return true;
+    } else {
+        db.rollback();
+        return false;
+    }
+}
+
+bool DatabaseManager::initializeLSI2Data()
+{
+    QSqlQuery checkQuery("SELECT COUNT(*) FROM LSI2");
+    if (checkQuery.exec() && checkQuery.next() && checkQuery.value(0).toInt() > 0) {
+        return true;
+    }
+
+    QStringList students = {
+        "ACHRAF SABIR",
+        "MOHAMED MOUAD RGUIBI",
+        "AYOUB AIT SAID",
+        "MOUAD ELHANSALI",
+        "MOHAMED BARBYCH",
+        "BADR BENABDELAH",
+        "ABAKHAR ABDESSAMAD"
+    };
+
+    db.transaction();
+    QSqlQuery query;
+    query.prepare("INSERT INTO LSI2 (name, cne, cin) VALUES (?, ?, ?)");
+
+    bool success = true;
+    for (const QString& student : students) {
+        query.addBindValue(student);
+        QString cne = "LSI2" + QString::number(qHash(student) % 100000);
+        QString cin = "CIN" + QString::number(qHash(student + "salt") % 100000);
+        query.addBindValue(cne);
+        query.addBindValue(cin);
+        
+        if (!query.exec()) {
+            qDebug() << "Error inserting LSI2 student:" << student << query.lastError();
+            success = false;
+            break;
+        }
+    }
+
+    if (success) {
+        db.commit();
+        return true;
+    } else {
+        db.rollback();
+        return false;
+    }
+}
+
+bool DatabaseManager::initializeLSI3Data()
+{
+    QSqlQuery checkQuery("SELECT COUNT(*) FROM LSI3");
+    if (checkQuery.exec() && checkQuery.next() && checkQuery.value(0).toInt() > 0) {
+        return true;
+    }
+
+    QStringList students = {
+        "BAKR ASSKALLI",
+        "MAROUA AMAL",
+        "OUAIL LAAMIRI"
+    };
+
+    db.transaction();
+    QSqlQuery query;
+    query.prepare("INSERT INTO LSI3 (name, cne, cin) VALUES (?, ?, ?)");
+
+    bool success = true;
+    for (const QString& student : students) {
+        query.addBindValue(student);
+        QString cne = "LSI3" + QString::number(qHash(student) % 100000);
+        QString cin = "CIN" + QString::number(qHash(student + "salt") % 100000);
+        query.addBindValue(cne);
+        query.addBindValue(cin);
+        
+        if (!query.exec()) {
+            qDebug() << "Error inserting LSI3 student:" << student << query.lastError();
+            success = false;
+            break;
+        }
+    }
+
+    if (success) {
+        db.commit();
+        return true;
+    } else {
+        db.rollback();
+        return false;
+    }
+}
+
+bool DatabaseManager::initializeProfessorsData()
+{
+    QSqlQuery checkQuery("SELECT COUNT(*) FROM Professors");
+    if (checkQuery.exec() && checkQuery.next() && checkQuery.value(0).toInt() > 0) {
+        return true;
+    }
+
+    QList<QPair<QString, QString>> professors = {
+        {"EN-NAIMI El Mokhtar", "POO en C++/JAVA"},
+        {"EL ACHAK Lotfi", "Front-End/Design Patterns/JEE"},
+        {"BAIDA OUAFAE", "Structure de données"},
+        {"KHALI ISSA SANAE", "Algorithme et Prog"},
+        {"BENABDELWAHAB IKRAM", "Algorithme et prog2"},
+        {"EL YOUSSEFI Yassine", "Back-End(PHP)"},
+        {"JEBARI Khalid", "Machine Learning"},
+        {"Pr. AZMANI Abdellah", "Soft Skills"},
+        {"Pr. Ait kbir M'hamed", "Artificial Intelligence"},
+        {"EL BRAK Mohammed", "IoT & Systèmes Embarqués"},
+        {"ZILI Hassan", "Base de données/DotNet"},
+        {"KOUNAIDI Mohamed", "Soft Skills"},
+        {"EZZIYYANI Mostafa", "Base de données"},
+        {"MAHBOUB Aziz", "Back-End(PHP & Frameworks)"},
+        {"ZOUHAIR Abdelhamid", "Réseaux et Systèmes"},
+        {"GHADI Abderrahim", "Théorie des graphes/CyberSécurité"},
+        {"BOUDHIR Abdelhakim Anouar", "Developpement Web"},
+        {"BOUHORMA Mohammed", "Cloud Computing"},
+        {"BEN AHMED Mohamed", "Administration Bases de données"},
+        {"EL AMRANI Chaker", "UML"},
+        {"FENNAN Abdelhadi", "JAVA AVANCÉ"},
+        {"Badr-Eddine BOUDRIKI SEMLALI", "Python"},
+    };
+
+    db.transaction();
+    QSqlQuery query;
+    query.prepare("INSERT INTO Professors (name, cin, speciality) VALUES (?, ?, ?)");
+
+    bool success = true;
+    for (const auto& prof : professors) {
+        query.addBindValue(prof.first);
+        QString cin = "PROF" + QString::number(qHash(prof.first) % 100000);
+        query.addBindValue(cin);
+        query.addBindValue(prof.second);
+        
+        if (!query.exec()) {
+            qDebug() << "Error inserting professor:" << prof.first << query.lastError();
+            success = false;
+            break;
+        }
+    }
+
+    if (success) {
+        db.commit();
+        return true;
+    } else {
+        db.rollback();
+        return false;
+    }
 }
 
 bool DatabaseManager::addStudent(const QString& level, const QString& name, const QString& cne, const QString& cin)

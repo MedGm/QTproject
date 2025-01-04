@@ -1,6 +1,5 @@
 P1******06,SAMI,ALMALIKI,MIPC,0667890123,sami@exemple.com,1997-03-11,Startup Lab,Informatique,AD
 P1******08,TARIQ,ALTAHIRI,MIPC,0689012345,tariq@exemple.com,1995-08-14,XYZ Systems,Développement web,AD
-P1******11,YASMIN,ALFAHIM,MIP,0612345678,yasmin@exemple.com,1997-06-19,Enterprise Beta,Développement logiciel,AD
 P1******14,SALAH,ALOUCHE,MIPC,0645678901,salah@exemple.com,1996-12-15,TechSolutions,Analyse des données,AD
 P1******15,HASSAN,ALSAADI,MIP,0656789012,hassan@exemple.com,1997-07-11,XYZ Systems,Développement logiciel,AD
 P1******16,AMIR,ALRAYES,MIPC,0667890123,amir@exemple.com,1998-11-09,Enterprise Beta,Développement web,AD

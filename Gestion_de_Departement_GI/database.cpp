@@ -8,7 +8,7 @@
 QFile Database::file;
 
 bool Database::writeDataToFile(const QString& level, const QStringList& data) {
-    QString fileName = (level == "AD" || level == "Analyse des données") ? "C:/Users/moonx/Documents/Gestion_de_Departement_GI/ad_data.txt" : "C:/Users/moonx/Documents/Gestion_de_Departement_GI/idai_data.txt";
+    QString fileName = (level == "AD" || level == "Analyse des données") ? "/home/medgm/Desktop/Gestion_de_Departement_GI/ad_data.txt" : "/home/medgm/Desktop/Gestion_de_Departement_GI/idai_data.txt";
     QFile file(fileName);
 
     if (!file.open(QIODevice::Append | QIODevice::Text)) {
@@ -24,7 +24,7 @@ bool Database::writeDataToFile(const QString& level, const QStringList& data) {
 }
 
 bool Database::readDataFromFile(const QString& filename, QList<QStringList>& studentsData, const QString& selectedLevel) {
-    if (filename != "C:/Users/moonx/Documents/Gestion_de_Departement_GI/idai_data.txt" && filename != "C:/Users/moonx/Documents/Gestion_de_Departement_GI/ad_data.txt") {
+    if (filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/idai_data.txt" && filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/ad_data.txt") {
         qDebug() << "Error: Invalid file path!";
         return false;
     }
@@ -51,11 +51,13 @@ bool Database::readDataFromFile(const QString& filename, QList<QStringList>& stu
     }
     file.close();
     return true;
+
+
 }
 
 
 bool Database::readStageDataFromFile(const QString &filename, QList<QStringList> &stageData, const QString &selectedLevel) {
-    if (filename != "C:/Users/moonx/Documents/Gestion_de_Departement_GI/tt/stage_idai.txt" && filename != "C:/Users/moonx/Documents/Gestion_de_Departement_GI/tt/stage_ad.txt") {
+    if (filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/tt/stage_idai.txt" && filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/tt/stage_ad.txt") {
         qDebug() << "Error: Invalid file path!";
         return false;
     }
@@ -80,13 +82,14 @@ bool Database::readStageDataFromFile(const QString &filename, QList<QStringList>
             }
         }
     }
+    qDebug()<<"A9ay tha";
     file.close();
     return true;
 }
 
 
 bool Database::hasDataInFile(const QString& level) {
-    QString fileName = (level == "AD" || level == "Analyse des données") ? "C:/Users/moonx/Documents/Gestion_de_Departement_GI/ad_data.txt" : "C:/Users/moonx/Documents/Gestion_de_Departement_GI/idai_data.txt";
+    QString fileName = (level == "AD" || level == "Analyse des données") ? "/home/medgm/Desktop/Gestion_de_Departement_GI/ad_data.txt" : "/home/medgm/Desktop/Gestion_de_Departement_GI/idai_data.txt";
     file.setFileName(fileName);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
         qDebug() << "Error opening file to check data.";
@@ -101,3 +104,32 @@ bool Database::hasDataInFile(const QString& level) {
 void Database::disconnectFromDatabase() {
     qDebug() << "Disconnected from the database!";
 }
+
+
+bool Database::readTimetableDataFromFile(const QString& filename, QList<QStringList>& timetableData, const QString& selectedLevel) {
+    QFile file(filename);
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qDebug() << "Error opening file: " << file.errorString();
+        return false;
+    }
+
+    QTextStream in(&file);
+    QString currentLine;
+    QStringList currentData;
+
+    while (!in.atEnd()) {
+        currentLine = in.readLine().trimmed();
+
+        if (!currentLine.isEmpty()) {
+            QStringList fields = currentLine.split(",");
+
+            if (fields.size() >= 4 && fields.at(0).trimmed() == selectedLevel) {
+                timetableData.append(fields);
+            }
+        }
+    }
+    file.close();
+    return true;
+}
+
+

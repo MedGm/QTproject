@@ -152,9 +152,9 @@ void licence::loadStudents(const QString &level) {
     studentsTable->setRowCount(0);
     QString fileName;
     if (level == "AD" || level == "Analyse des données") {
-        fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/ad_data.txt";
+        fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/ad_data.txt";
     } else if (level == "IDAI" || level == "Ingénierie du développement des applications informatiques") {
-        fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/idai_data.txt";
+        fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/idai_data.txt";
     }
     if (fileName.isEmpty()) {
         qDebug() << "File name is empty!";
@@ -229,9 +229,9 @@ void licence::onShowStudentInfoClicked(int row) {
     QString level = levelComboBoxStudents->currentText();
     QString fileName;
     if (level == "Analyse des données" || level == "AD") {
-        fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/ad_data.txt";
+        fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/ad_data.txt";
     } else if (level == "Ingénierie du développement des applications informatiques" || level == "IDAI") {
-        fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/idai_data.txt";
+        fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/idai_data.txt";
     }
     QFile file(fileName);
     if (!file.open(QIODevice::ReadOnly)) {
@@ -299,9 +299,9 @@ void licence::onConfirmDeleteStudent(int row) {
         QString selectedLevel = levelComboBoxStudents->currentData().toString();
         QString fileName;
         if (selectedLevel == "AD") {
-            fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/ad_data.txt";
+            fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/ad_data.txt";
         } else if (selectedLevel == "IDAI") {
-            fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/idai_data.txt";
+            fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/idai_data.txt";
         }
         if (fileName.isEmpty()) {
             qDebug() << "File name is empty!";
@@ -437,9 +437,9 @@ void licence::onAddInternshipClicked(int row) {
 
         QString fileName;
         if (level == "AD" || level == "Analyse des données") {
-            fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/tt/stage_ad.txt";
-        } else if (level == "IDAI" || level == "Ingénierie du développement des applications informatiques") {
-            fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/tt/stage_idai.txt";
+            fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/tt/stage_ad.txt";
+        } else {
+            fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/tt/stage_idai.txt";
         }
 
         if (!fileName.isEmpty()) {
@@ -671,6 +671,7 @@ void licence::onLevelChangedForStages(int index) {
     studentsTable->setVisible(false);
     stageTable->setVisible(true);
     loadStages(selectedLevel);
+    qDebug()<<"pmpmpmp";
 }
 
 
@@ -678,12 +679,10 @@ void licence::loadStages(const QString &level) {
     stageTable->clearContents();
     stageTable->setRowCount(0);
     QString fileName;
-    if (level == "IDAI" || level == "Ingénierie du développement des applications informatiques") {
-        fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/tt/stage_idai.txt";
-    } else if (level == "AD" || level == "Analyse des données") {
-        fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/tt/stage_ad.txt";
-    } else {
-        return;
+    if (level == "AD" || level == "Analyse des données") {
+        fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/tt/stage_ad.txt";
+    } else{
+        fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/tt/stage_idai.txt";
     }
 
     if (fileName.isEmpty()) {
@@ -729,6 +728,7 @@ void licence::loadStages(const QString &level) {
     stageTable->setVisible(true);
     studentsTable->setVisible(false);
     stackedWidget->setCurrentWidget(stageTable);
+    qDebug()<<"llllllllmoo,,k";
 }
 
 
@@ -743,7 +743,11 @@ void licence::onstageClicked() {
             stackedWidget->removeWidget(widget);
         }
     }
-    stackedWidget->setCurrentWidget(stageTable);
+    QString selectedLevel = levelComboBoxStages->currentData().toString();
+    loadStages(selectedLevel);
+    qDebug()<<"clikaaaaaaaaaaaaaaaaaa";
+
+    //stackedWidget->setCurrentWidget(stageTable);
 }
 
 void licence::onShowStageInfoClicked(int row) {
@@ -757,9 +761,9 @@ void licence::onShowStageInfoClicked(int row) {
     QString level = levelComboBoxStages->currentText();
     QString fileName;
     if (level == "Analyse des données" || level == "AD") {
-        fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/tt/stage_ad.txt";
-    } else if (level == "Ingénierie du développement des applications informatiques" || level == "IDAI") {
-        fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/tt/stage_idai.txt";
+        fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/tt/stage_ad.txt";
+    } else {
+        fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/tt/stage_idai.txt";
     }
 
     QFile file(fileName);
@@ -785,7 +789,6 @@ void licence::onShowStageInfoClicked(int row) {
         return;
     }
 
-    // Afficher une fenêtre d'informations avec tous les détails
     QDialog *infoDialog = new QDialog(this);
     infoDialog->setWindowTitle("Informations du Stage");
     infoDialog->resize(800, 450);
@@ -838,9 +841,9 @@ void licence::onConfirmDeleteStage(int row) {
         QString selectedLevel = levelComboBoxStages->currentData().toString();
         QString fileName;
         if (selectedLevel == "AD") {
-            fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GI/tt/stage_ad.txt";
-        } else if (selectedLevel == "IDAI") {
-            fileName = "C:/Users/moonx/Documents/Gestion_de_Departement_GItt/stage_idai.txt";
+            fileName = "/home/medgm/Desktop/Gestion_de_Departement_GI/tt/stage_ad.txt";
+        } else {
+            fileName = "/home/medgm/Desktop/newtt/stage_idai.txt";
         }
         if (fileName.isEmpty()) {
             qDebug() << "File name is empty!";
@@ -905,29 +908,22 @@ void licence::onDeleteStageClicked(int row) {
 
 //imag
 void licence::onLevelChangedForTimetable(int index) {
-    QString selectedLevel = levelComboBoxTimetable->currentData().toString();
-    qDebug() << "Selected Level for Timetable: " << selectedLevel;
-
-    levelComboBoxStudents->setVisible(false);
-    levelComboBoxStages->setVisible(false);
-
-    studentsTable->setVisible(false);
-    stageTable->setVisible(false);
-
-    levelComboBoxTimetable->setVisible(true);
-
-    updateTimeTableImage(selectedLevel);
-
-    stackedWidget->setCurrentWidget(imageWidget);
+    QString niveauSelectionne = levelComboBoxTimetable->currentData().toString();
+    qDebug() << "Niveau sélectionné pour l'emploi du temps : " << niveauSelectionne;
+    updateTimeTableImage(niveauSelectionne);
 }
 
-void licence::updateTimeTableImage(const QString &level) {
+void licence::refreshPage() {
     foreach (QWidget *widget, stackedWidget->findChildren<QWidget*>()) {
-        if (widget != imageWidget) {
-            stackedWidget->removeWidget(widget);
-        }
+        widget->setVisible(false);
     }
+    imageWidget->setVisible(true);
+}
 
+void licence::updateTimeTableImage(const QString& niveau) {
+    foreach (QWidget *widget, stackedWidget->findChildren<QWidget*>()) {
+        stackedWidget->removeWidget(widget);
+    }
     levelComboBoxStudents->setVisible(false);
     levelComboBoxStages->setVisible(false);
 
@@ -937,34 +933,90 @@ void licence::updateTimeTableImage(const QString &level) {
 
     imageWidget = new QWidget(this);
     QVBoxLayout *layout = new QVBoxLayout(imageWidget);
-    QLabel *imageLabel = new QLabel(this);
 
-    QString imagePath;
-    if (level == "AD") {
-        imagePath = ":/assets/etad.png";
-    } else if (level == "IDAI") {
-        imagePath = ":/assets/etidai.png";
+    QTableWidget *timeTable = new QTableWidget(this);
+    timeTable->setRowCount(6);
+    timeTable->setColumnCount(5);
+
+    timeTable->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
+    QStringList plagesHoraires = {"09h00 - 10h30", "10h45 - 12h15", "12h30 - 14h00", "14h15 - 15h45", "16h00 - 17h30"};
+    timeTable->setHorizontalHeaderLabels(plagesHoraires);
+
+    QStringList jours = {"Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"};
+    timeTable->setVerticalHeaderLabels(jours);
+
+    timeTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    timeTable->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
+    QList<QStringList> donneesEmploiDuTemps;
+    Database db;
+
+    QString nomFichier;
+    nomFichier = "/home/medgm/Desktop/Gestion_de_Departement_GI/E22.txt";
+    int indexJour = 0;
+    int indexPlageHoraire = 0;
+    if (db.readTimetableDataFromFile(nomFichier, donneesEmploiDuTemps, niveau)) {
+        for (int i = 0; i < donneesEmploiDuTemps.size(); ++i) {
+            QStringList champs = donneesEmploiDuTemps.at(i);
+
+            QString jour = champs.at(1).trimmed();
+            QString plageHoraire = champs.at(2).trimmed();
+            QString cours = champs.at(3).trimmed();
+            QString salle = champs.at(4).trimmed();
+
+            if (indexJour >= 6) {
+                indexJour = 0;
+            }
+
+            if (indexPlageHoraire >= 5) {
+                indexPlageHoraire = 0;
+                indexJour++;
+            }
+
+            qDebug() << cours + " (" + salle + ")";
+            if (!cours.isEmpty()) {
+                timeTable->setItem(indexJour, indexPlageHoraire, new QTableWidgetItem(cours + " (" + salle + ")"));
+            }
+
+            indexPlageHoraire++;
+        }
+    } else {
+        qDebug() << "Erreur : Impossible de charger les données de l'emploi du temps.";
     }
 
-    QPixmap schedule(imagePath);
-    if (!schedule.isNull()) {
-        imageLabel->setPixmap(schedule.scaled(800, 550, Qt::KeepAspectRatio, Qt::SmoothTransformation));
-    }
+    timeTable->setStyleSheet("QTableWidget {"
+                             "background-color: #f9f9f9;"
+                             "border: 1px solid #ddd;"
+                             "border-radius: 8px;"
+                             "font-family: 'Arial', sans-serif;"
+                             "font-size: 11pt;"
+                             "width: 100%;"
+                             "alternate-background-color: #f2f2f2;} "
+                             "QTableWidget::item {"
+                             "padding: 4px;"
+                             "border: 1px solid #e2e2e2;"
+                             "background-color: #ffffff;} "
+                             "QTableWidget::item:selected {"
+                             "background-color: #3498db;"
+                             "color: white;} "
+                             "QHeaderView::section {"
+                             "background-color: #2980b9;"
+                             "color: white;"
+                             "padding: 12px;"
+                             "font-weight: bold;"
+                             "border: none;}");
 
-    imageLabel->setAlignment(Qt::AlignCenter);
-    layout->addWidget(imageLabel);
+    layout->addWidget(timeTable);
     imageWidget->setLayout(layout);
 
     stackedWidget->addWidget(imageWidget);
 }
 
-void licence::refreshPage() {
-    foreach (QWidget *widget, stackedWidget->findChildren<QWidget*>()) {
-        widget->setVisible(false);
-    }
 
-    imageWidget->setVisible(true);
-}
+
+
+
 
 
 

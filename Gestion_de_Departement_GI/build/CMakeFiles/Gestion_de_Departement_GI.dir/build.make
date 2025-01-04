@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/medgm/Downloads/new
+CMAKE_SOURCE_DIR = /home/medgm/Desktop/Gestion_de_Departement_GI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/medgm/Downloads/new/build
+CMAKE_BINARY_DIR = /home/medgm/Desktop/Gestion_de_Departement_GI/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Gestion_de_Departement_GI.dir/depend.make
@@ -72,238 +72,238 @@ include CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
 Gestion_de_Departement_GI_autogen/timestamp: /usr/lib/qt6/libexec/moc
 Gestion_de_Departement_GI_autogen/timestamp: /usr/lib/qt6/libexec/uic
 Gestion_de_Departement_GI_autogen/timestamp: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Gestion_de_Departement_GI"
-	/usr/bin/cmake -E cmake_autogen /home/medgm/Downloads/new/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutogenInfo.json Debug
-	/usr/bin/cmake -E touch /home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Gestion_de_Departement_GI"
+	/usr/bin/cmake -E cmake_autogen /home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E touch /home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/timestamp
 
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets.qrc
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets.qrc
 Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutoRcc_assets_EWIEGA46WW_Info.json
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/licence.png
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/emplois1.png
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/etidai.png
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/etad.png
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/padlock.png
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/fst.jpeg
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/user.png
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/emplois5.png
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/cycle.png
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/emplois3.png
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/log-uae.png
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/useradminlogo.png
-Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Downloads/new/assets/master.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/licence.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/emplois1.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/etidai.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/etad.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/padlock.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/fst.jpeg
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/user.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/emplois5.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/cycle.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/emplois3.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/log-uae.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/useradminlogo.png
+Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /home/medgm/Desktop/Gestion_de_Departement_GI/assets/master.png
 Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp: /usr/lib/qt6/libexec/rcc
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for assets.qrc"
-	/usr/bin/cmake -E cmake_autorcc /home/medgm/Downloads/new/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutoRcc_assets_EWIEGA46WW_Info.json Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for assets.qrc"
+	/usr/bin/cmake -E cmake_autorcc /home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutoRcc_assets_EWIEGA46WW_Info.json Debug
 
 CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
 CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o: Gestion_de_Departement_GI_autogen/mocs_compilation.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o -c /home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o: /home/medgm/Downloads/new/main.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/main.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o -c /home/medgm/Downloads/new/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/main.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/main.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/main.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/main.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/main.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/main.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o: /home/medgm/Downloads/new/mainwindow.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/mainwindow.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o -c /home/medgm/Downloads/new/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/mainwindow.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/mainwindow.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/mainwindow.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/mainwindow.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/mainwindow.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/mainwindow.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o: /home/medgm/Downloads/new/logindialog.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/logindialog.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o -c /home/medgm/Downloads/new/logindialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/logindialog.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/logindialog.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/logindialog.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/logindialog.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/logindialog.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/logindialog.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o: /home/medgm/Downloads/new/selectionwindow.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/selectionwindow.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o -c /home/medgm/Downloads/new/selectionwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/selectionwindow.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/selectionwindow.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/selectionwindow.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/selectionwindow.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/selectionwindow.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/selectionwindow.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o: /home/medgm/Downloads/new/cyclemanagement.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/cyclemanagement.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o -c /home/medgm/Downloads/new/cyclemanagement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/cyclemanagement.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/cyclemanagement.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/cyclemanagement.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/cyclemanagement.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/cyclemanagement.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/cyclemanagement.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o: /home/medgm/Downloads/new/databasemanager.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/databasemanager.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o -c /home/medgm/Downloads/new/databasemanager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/databasemanager.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/databasemanager.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/databasemanager.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/databasemanager.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/databasemanager.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/databasemanager.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o: /home/medgm/Downloads/new/studentdialog.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/studentdialog.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o -c /home/medgm/Downloads/new/studentdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/studentdialog.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/studentdialog.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/studentdialog.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/studentdialog.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/studentdialog.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/studentdialog.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o: /home/medgm/Downloads/new/demandswindow.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/demandswindow.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o -c /home/medgm/Downloads/new/demandswindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/demandswindow.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/demandswindow.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/demandswindow.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/demandswindow.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/demandswindow.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/demandswindow.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o: /home/medgm/Downloads/new/professorswindow.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/professorswindow.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o -c /home/medgm/Downloads/new/professorswindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/professorswindow.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/professorswindow.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/professorswindow.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/professorswindow.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/professorswindow.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/professorswindow.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o: /home/medgm/Downloads/new/reservationswindow.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/reservationswindow.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o -c /home/medgm/Downloads/new/reservationswindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/reservationswindow.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/reservationswindow.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/reservationswindow.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/reservationswindow.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/reservationswindow.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/reservationswindow.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o: /home/medgm/Downloads/new/database.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/database.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o -c /home/medgm/Downloads/new/database.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/database.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/database.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/database.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/database.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/database.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/database.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o: /home/medgm/Downloads/new/licence.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/licence.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o -c /home/medgm/Downloads/new/licence.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/licence.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/licence.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/licence.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/licence.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/licence.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/licence.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
-CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o: /home/medgm/Downloads/new/master.cpp
+CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o: /home/medgm/Desktop/Gestion_de_Departement_GI/master.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o -c /home/medgm/Downloads/new/master.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/master.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/master.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/master.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/master.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/master.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/master.cpp.s
 
 CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/flags.make
 CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o: Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o: CMakeFiles/Gestion_de_Departement_GI.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o -c /home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o -MF CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o.d -o CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.o -c /home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp
 
 CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.i"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp > CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.i
 
 CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.s"
-	/usr/bin/clang++-18 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp -o CMakeFiles/Gestion_de_Departement_GI.dir/Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp.s
 
 # Object files for target Gestion_de_Departement_GI
 Gestion_de_Departement_GI_OBJECTS = \
@@ -349,7 +349,7 @@ Gestion_de_Departement_GI: /usr/lib/x86_64-linux-gnu/libGLX.so
 Gestion_de_Departement_GI: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 Gestion_de_Departement_GI: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 Gestion_de_Departement_GI: CMakeFiles/Gestion_de_Departement_GI.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable Gestion_de_Departement_GI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable Gestion_de_Departement_GI"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Gestion_de_Departement_GI.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -362,6 +362,6 @@ CMakeFiles/Gestion_de_Departement_GI.dir/clean:
 
 CMakeFiles/Gestion_de_Departement_GI.dir/depend: Gestion_de_Departement_GI_autogen/EWIEGA46WW/qrc_assets.cpp
 CMakeFiles/Gestion_de_Departement_GI.dir/depend: Gestion_de_Departement_GI_autogen/timestamp
-	cd /home/medgm/Downloads/new/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/medgm/Downloads/new /home/medgm/Downloads/new /home/medgm/Downloads/new/build /home/medgm/Downloads/new/build /home/medgm/Downloads/new/build/CMakeFiles/Gestion_de_Departement_GI.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/medgm/Desktop/Gestion_de_Departement_GI/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/medgm/Desktop/Gestion_de_Departement_GI /home/medgm/Desktop/Gestion_de_Departement_GI /home/medgm/Desktop/Gestion_de_Departement_GI/build /home/medgm/Desktop/Gestion_de_Departement_GI/build /home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/Gestion_de_Departement_GI.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Gestion_de_Departement_GI.dir/depend
 

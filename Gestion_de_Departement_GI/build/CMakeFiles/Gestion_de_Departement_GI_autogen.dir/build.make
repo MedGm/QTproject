@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/medgm/Downloads/new
+CMAKE_SOURCE_DIR = /home/medgm/Desktop/Gestion_de_Departement_GI
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/medgm/Downloads/new/build
+CMAKE_BINARY_DIR = /home/medgm/Desktop/Gestion_de_Departement_GI/build
 
 # Utility rule file for Gestion_de_Departement_GI_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/Gestion_de_Departement_GI_autogen: Gestion_de_Departement_GI_autogen/
 Gestion_de_Departement_GI_autogen/timestamp: /usr/lib/qt6/libexec/moc
 Gestion_de_Departement_GI_autogen/timestamp: /usr/lib/qt6/libexec/uic
 Gestion_de_Departement_GI_autogen/timestamp: CMakeFiles/Gestion_de_Departement_GI_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/medgm/Downloads/new/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Gestion_de_Departement_GI"
-	/usr/bin/cmake -E cmake_autogen /home/medgm/Downloads/new/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutogenInfo.json Debug
-	/usr/bin/cmake -E touch /home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Gestion_de_Departement_GI"
+	/usr/bin/cmake -E cmake_autogen /home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E touch /home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/timestamp
 
 Gestion_de_Departement_GI_autogen: CMakeFiles/Gestion_de_Departement_GI_autogen
 Gestion_de_Departement_GI_autogen: Gestion_de_Departement_GI_autogen/timestamp
@@ -89,6 +89,6 @@ CMakeFiles/Gestion_de_Departement_GI_autogen.dir/clean:
 .PHONY : CMakeFiles/Gestion_de_Departement_GI_autogen.dir/clean
 
 CMakeFiles/Gestion_de_Departement_GI_autogen.dir/depend:
-	cd /home/medgm/Downloads/new/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/medgm/Downloads/new /home/medgm/Downloads/new /home/medgm/Downloads/new/build /home/medgm/Downloads/new/build /home/medgm/Downloads/new/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/medgm/Desktop/Gestion_de_Departement_GI/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/medgm/Desktop/Gestion_de_Departement_GI /home/medgm/Desktop/Gestion_de_Departement_GI /home/medgm/Desktop/Gestion_de_Departement_GI/build /home/medgm/Desktop/Gestion_de_Departement_GI/build /home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Gestion_de_Departement_GI_autogen.dir/depend
 

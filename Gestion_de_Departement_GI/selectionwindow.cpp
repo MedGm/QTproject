@@ -15,7 +15,9 @@ SelectionWindow::SelectionWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setupIcons();
-    
+
+
+
     connect(ui->engineerButton, &QPushButton::clicked, this, &SelectionWindow::onEngineerButtonClicked);
     connect(ui->professorsButton, &QPushButton::clicked, this, &SelectionWindow::onProfessorsButtonClicked);
     connect(ui->demandsButton, &QPushButton::clicked, this, &SelectionWindow::onDemandsButtonClicked);
@@ -36,30 +38,30 @@ SelectionWindow::~SelectionWindow()
 void SelectionWindow::setupIcons()
 {
     const int ICON_SIZE = 80;
-    
+
     auto setupButton = [this](QPushButton* button, const QString& iconPath) {
         QIcon icon(iconPath);
         QPixmap pixmap(ICON_SIZE, ICON_SIZE);
         pixmap.fill(Qt::transparent);
-        
+
         QPainter painter(&pixmap);
         painter.setRenderHint(QPainter::SmoothPixmapTransform);
         painter.drawPixmap(0, 0, icon.pixmap(ICON_SIZE, ICON_SIZE));
         painter.setCompositionMode(QPainter::CompositionMode_SourceIn);
         painter.fillRect(pixmap.rect(), Qt::white);
-        
+
         button->setIcon(QIcon(pixmap));
         button->setIconSize(QSize(ICON_SIZE, ICON_SIZE));
-        button->setStyleSheet(button->styleSheet() + 
-            "QPushButton { text-align: center; padding-top: 40px; }"
-            "QPushButton::icon { margin-bottom: 20px; }"
-        );
+        button->setStyleSheet(button->styleSheet() +
+                              "QPushButton { text-align: center; padding-top: 40px; }"
+                              "QPushButton::icon { margin-bottom: 20px; }"
+                              );
     };
 
     setupButton(ui->masterButton, ":/assets/master.png");
     setupButton(ui->licenceButton, ":/assets/licence.png");
     setupButton(ui->engineerButton, ":/assets/cycle.png");
-    
+
     for(auto button : {ui->masterButton, ui->licenceButton, ui->engineerButton}) {
         button->setFlat(true);
         QGraphicsDropShadowEffect* shadow = new QGraphicsDropShadowEffect(this);
@@ -70,14 +72,14 @@ void SelectionWindow::setupIcons()
     }
 }
 
-void SelectionWindow::onEngineerButtonClicked() //configuration de button de cycle d'ing
+void SelectionWindow::onEngineerButtonClicked()
 {
     cyclemanagement *cycleWindow = new cyclemanagement(this);
     cycleWindow->show();
     this->hide();
 }
 
-void SelectionWindow::onProfessorsButtonClicked() //configuration de button de professeur
+void SelectionWindow::onProfessorsButtonClicked()
 {
     if (!professorsWindow) {
         professorsWindow = new ProfessorsWindow(this);
@@ -85,7 +87,7 @@ void SelectionWindow::onProfessorsButtonClicked() //configuration de button de p
     professorsWindow->show();
 }
 
-void SelectionWindow::onDemandsButtonClicked() //configuration de button des demandes
+void SelectionWindow::onDemandsButtonClicked()
 {
     if (!demandsWindow) {
         demandsWindow = new DemandsWindow(this);
@@ -100,6 +102,7 @@ void SelectionWindow::onReservationsButtonClicked()
     }
     reservationsWindow->show();
 }
+
 
 void SelectionWindow::onLicenceButtonClicked(){
     licence *licencew = new licence(this);

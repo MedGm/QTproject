@@ -1,16 +1,16 @@
 {
-	"BUILD_DIR" : "/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen",
-	"CMAKE_BINARY_DIR" : "/home/medgm/Downloads/new/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/medgm/Downloads/new/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/medgm/Downloads/new",
+	"BUILD_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen",
+	"CMAKE_BINARY_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/medgm/Downloads/new/CMakeLists.txt",
-		"/home/medgm/Downloads/new/build/CMakeFiles/3.28.3/CMakeSystem.cmake",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/CMakeLists.txt",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/3.28.3/CMakeSystem.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/share/cmake-3.28/Modules/Platform/Linux-Initialize.cmake",
-		"/home/medgm/Downloads/new/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/3.28.3/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake",
@@ -18,12 +18,9 @@
 		"/usr/share/cmake-3.28/Modules/Platform/UnixPaths.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeCXXInformation.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake",
-		"/usr/share/cmake-3.28/Modules/Compiler/Clang-CXX.cmake",
-		"/usr/share/cmake-3.28/Modules/Compiler/Clang.cmake",
-		"/usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"/usr/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake",
 		"/usr/share/cmake-3.28/Modules/Compiler/GNU.cmake",
 		"/usr/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
-		"/usr/share/cmake-3.28/Modules/Platform/Linux-Clang-CXX.cmake",
 		"/usr/share/cmake-3.28/Modules/Platform/Linux-GNU-CXX.cmake",
 		"/usr/share/cmake-3.28/Modules/Platform/Linux-GNU.cmake",
 		"/usr/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake",
@@ -172,89 +169,89 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlAdditionalTargetInfo.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6Sql/Qt6SqlVersionlessTargets.cmake",
 		"/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake",
-		"/home/medgm/Downloads/new/assets.qrc"
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets.qrc"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/medgm/Downloads/new",
-	"DEP_FILE" : "/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI",
+	"DEP_FILE" : "/home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "Gestion_de_Departement_GI_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/home/medgm/Downloads/new/cyclemanagement.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/cyclemanagement.h",
 			"MU",
 			"EWIEGA46WW/moc_cyclemanagement.cpp",
 			null
 		],
 		[
-			"/home/medgm/Downloads/new/database.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/database.h",
 			"MU",
 			"EWIEGA46WW/moc_database.cpp",
 			null
 		],
 		[
-			"/home/medgm/Downloads/new/databasemanager.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/databasemanager.h",
 			"MU",
 			"EWIEGA46WW/moc_databasemanager.cpp",
 			null
 		],
 		[
-			"/home/medgm/Downloads/new/demandswindow.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/demandswindow.h",
 			"MU",
 			"EWIEGA46WW/moc_demandswindow.cpp",
 			null
 		],
 		[
-			"/home/medgm/Downloads/new/licence.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/licence.h",
 			"MU",
 			"EWIEGA46WW/moc_licence.cpp",
 			null
 		],
 		[
-			"/home/medgm/Downloads/new/logindialog.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/logindialog.h",
 			"MU",
 			"EWIEGA46WW/moc_logindialog.cpp",
 			null
 		],
 		[
-			"/home/medgm/Downloads/new/mainwindow.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"/home/medgm/Downloads/new/master.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/master.h",
 			"MU",
 			"EWIEGA46WW/moc_master.cpp",
 			null
 		],
 		[
-			"/home/medgm/Downloads/new/professorswindow.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/professorswindow.h",
 			"MU",
 			"EWIEGA46WW/moc_professorswindow.cpp",
 			null
 		],
 		[
-			"/home/medgm/Downloads/new/reservationswindow.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/reservationswindow.h",
 			"MU",
 			"EWIEGA46WW/moc_reservationswindow.cpp",
 			null
 		],
 		[
-			"/home/medgm/Downloads/new/selectionwindow.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/selectionwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_selectionwindow.cpp",
 			null
 		],
 		[
-			"/home/medgm/Downloads/new/studentdialog.h",
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/studentdialog.h",
 			"MU",
 			"EWIEGA46WW/moc_studentdialog.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_SQL_LIB", "QT_WIDGETS_LIB" ],
 	"MOC_DEPEND_FILTERS" : 
 	[
@@ -275,7 +272,7 @@
 		"/usr/include/c++/13",
 		"/usr/include/x86_64-linux-gnu/c++/13",
 		"/usr/include/c++/13/backward",
-		"/usr/lib/llvm-18/lib/clang/18/include",
+		"/usr/lib/gcc/x86_64-linux-gnu/13/include",
 		"/usr/local/include",
 		"/usr/include/x86_64-linux-gnu"
 	],
@@ -291,39 +288,87 @@
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"/usr/bin/clang++-18",
+		"/usr/bin/g++",
 		"-std=gnu++17",
 		"-dM",
 		"-E",
 		"-c",
 		"/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/medgm/Downloads/new/build/Gestion_de_Departement_GI_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/medgm/Desktop/Gestion_de_Departement_GI/build/Gestion_de_Departement_GI_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 2,
-	"PARSE_CACHE_FILE" : "/home/medgm/Downloads/new/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 4,
-	"SETTINGS_FILE" : "/home/medgm/Downloads/new/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/medgm/Desktop/Gestion_de_Departement_GI/build/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/medgm/Downloads/new/cyclemanagement.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/database.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/databasemanager.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/demandswindow.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/licence.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/logindialog.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/main.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/mainwindow.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/master.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/professorswindow.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/reservationswindow.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/selectionwindow.cpp", "MU", null ],
-		[ "/home/medgm/Downloads/new/studentdialog.cpp", "MU", null ]
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/cyclemanagement.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/database.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/databasemanager.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/demandswindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/licence.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/logindialog.cpp",
+			"MU",
+			null
+		],
+		[ "/home/medgm/Desktop/Gestion_de_Departement_GI/main.cpp", "MU", null ],
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/master.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/professorswindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/reservationswindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/selectionwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/medgm/Desktop/Gestion_de_Departement_GI/studentdialog.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

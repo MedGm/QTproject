@@ -1,7 +1,6 @@
 #include "master.h"
 #include <QMessageBox>
-
-
+#include "database.h"
 #include <QDebug>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
@@ -11,6 +10,8 @@
 #include <QLineEdit>
 #include <QFormLayout>
 #include <QSpinBox>
+#include <QHeaderView>
+
 
 // Constructeur de Master
 Master::Master(QWidget *parent) : QMainWindow(parent) {
@@ -223,7 +224,7 @@ bool Master::writeDataToFile(const QStringList& data) {
 
 
     QString level = filiereComboBox->currentText();
-    QString filename = QString("C:/Users/Lenovo/Documents/new/%1.txt").arg(level);
+    QString filename = QString("/home/medgm/Desktop/Gestion_de_Departement_GI/%1.txt").arg(level);
     QFile file(filename);
 
     if (!file.open(QIODevice::Append | QIODevice::Text)) {
@@ -242,7 +243,7 @@ bool Master::writeDataStage(const QStringList& data) {
 
 
     QString level = filiereComboBox->currentText();
-    QString filename = QString("C:/Users/Lenovo/Documents/new/stage_%1.txt").arg(level);
+    QString filename = QString("/home/medgm/Desktop/Gestion_de_Departement_GI/stage_%1.txt").arg(level);
     QFile file(filename);
 
     if (!file.open(QIODevice::Append | QIODevice::Text)) {
@@ -260,8 +261,8 @@ bool Master::writeDataStage(const QStringList& data) {
 
 bool Master::readDataStage(QList<QStringList>& studentsData) {
     QString level = filiereComboBox->currentText();
-    QString filename = QString("C:/Users/Lenovo/Documents/new/stage_%1.txt").arg(level);
-    if (filename != "C:/Users/Lenovo/Documents/new/stage_SBD1.txt" && filename != "C:/Users/Lenovo/Documents/new/stage_SBD2.txt" && filename != "C:/Users/Lenovo/Documents/new/stage_AISD1.txt" && filename != "C:/Users/Lenovo/Documents/new/stage_AISD2.txt") {
+    QString filename = QString("/home/medgm/Desktop/Gestion_de_Departement_GI/stage_%1.txt").arg(level);
+    if (filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/stage_SBD1.txt" && filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/stage_SBD2.txt" && filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/stage_AISD1.txt" && filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/stage_AISD2.txt") {
         qDebug() << "Error: Invalid file path!";
         return false;
     }
@@ -294,8 +295,8 @@ bool Master::readDataStage(QList<QStringList>& studentsData) {
 
 bool Master::readDataFromFile(QList<QStringList>& studentsData) {
     QString level = filiereComboBox->currentText();
-    QString filename = QString("C:/Users/Lenovo/Documents/new/%1.txt").arg(level);
-    if (filename != "C:/Users/Lenovo/Documents/new/SBD1.txt" && filename != "C:/Users/Lenovo/Documents/new/SBD2.txt" && filename != "C:/Users/Lenovo/Documents/new/AISD1.txt" && filename != "C:/Users/Lenovo/Documents/new/AISD2.txt") {
+    QString filename = QString("/home/medgm/Desktop/Gestion_de_Departement_GI/%1.txt").arg(level);
+    if (filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/SBD1.txt" && filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/SBD2.txt" && filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/AISD1.txt" && filename != "/home/medgm/Desktop/Gestion_de_Departement_GI/AISD2.txt") {
         qDebug() << "Error: Invalid file path!";
         return false;
     }
@@ -325,7 +326,7 @@ bool Master::readDataFromFile(QList<QStringList>& studentsData) {
 
 bool Master::removeLigneFromFile(const QStringList& data) {
     QString level = filiereComboBox->currentText();
-    QString filename = QString("C:/Users/Lenovo/Documents/new/%1.txt").arg(level);
+    QString filename = QString("/home/medgm/Desktop/Gestion_de_Departement_GI/%1.txt").arg(level);
     QFile file(filename);
 
     // Vérifier si le fichier existe
@@ -688,29 +689,134 @@ void Master::updateStudent() {
 }
 
 
-void Master::emploits(const QString &level) {
-    QString imagePath;
-    if (level == "SBD1") {
-        imagePath = ":/assets/emplois1.png";
-    } else if (level == "SBD2") {
-        imagePath = ":/assets/emplois3.png";
-    } else if (level == "AISD1") {
-        imagePath = ":/assets/AISD1.png";
-    } else if (level == "AISD2") {
-        imagePath = ":/assets/etad.png";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void Master::emploits(const QString &niveau) {
+    QWidget *tableWidgetContainer = new QWidget(this);
+    QVBoxLayout *layout = new QVBoxLayout(tableWidgetContainer);
+
+    QTableWidget *timeTable = new QTableWidget(this);
+    timeTable->setRowCount(6);
+    timeTable->setColumnCount(5);
+
+    timeTable->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
+    QStringList plagesHoraires = {"09h00 - 10h30", "10h45 - 12h15", "12h30 - 14h00", "14h15 - 15h45", "16h00 - 17h30"};
+    timeTable->setHorizontalHeaderLabels(plagesHoraires);
+
+    QStringList jours = {"Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"};
+    timeTable->setVerticalHeaderLabels(jours);
+
+    timeTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    timeTable->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
+    QList<QStringList> donneesEmploiDuTemps;
+    Database db;
+
+    QString nomFichier = "/home/medgm/Desktop/Gestion_de_Departement_GI/E22.txt";
+    int indexJour = 0;
+    int indexPlageHoraire = 0;
+    if (db.readTimetableDataFromFile(nomFichier, donneesEmploiDuTemps, niveau)) {
+        for (int i = 0; i < donneesEmploiDuTemps.size(); ++i) {
+            QStringList champs = donneesEmploiDuTemps.at(i);
+
+            QString jour = champs.at(1).trimmed();
+            QString plageHoraire = champs.at(2).trimmed();
+            QString cours = champs.at(3).trimmed();
+            QString salle = champs.at(4).trimmed();
+
+            if (indexJour >= 6) {
+                indexJour = 0;
+            }
+
+            if (indexPlageHoraire >= 5) {
+                indexPlageHoraire = 0;
+                indexJour++;
+            }
+
+            if (!cours.isEmpty()) {
+                timeTable->setItem(indexJour, indexPlageHoraire, new QTableWidgetItem(cours + " (" + salle + ")"));
+            }
+
+            indexPlageHoraire++;
+        }
+    } else {
+        qDebug() << "Erreur : Impossible de charger les données de l'emploi du temps.";
     }
 
-    QPixmap schedule(imagePath);
-    if (!schedule.isNull()) {
-        emploiLabel->setPixmap(schedule.scaled(emploiLabel->size(), Qt::KeepAspectRatio, Qt::SmoothTransformation));
-    }
+    timeTable->setStyleSheet("QTableWidget {"
+                             "background-color: #f9f9f9;"
+                             "border: 1px solid #ddd;"
+                             "border-radius: 8px;"
+                             "font-family: 'Arial', sans-serif;"
+                             "font-size: 11pt;"
+                             "width: 100%;"
+                             "alternate-background-color: #f2f2f2;} "
+                             "QTableWidget::item {"
+                             "padding: 4px;"
+                             "border: 1px solid #e2e2e2;"
+                             "background-color: #ffffff;} "
+                             "QTableWidget::item:selected {"
+                             "background-color: #3498db;"
+                             "color: white;} "
+                             "QHeaderView::section {"
+                             "background-color: #2980b9;"
+                             "color: white;"
+                             "padding: 12px;"
+                             "font-weight: bold;"
+                             "border: none;}");
+
+    layout->addWidget(timeTable);
+    tableWidgetContainer->setLayout(layout);
+
+    stackedWidget->addWidget(tableWidgetContainer);
+    stackedWidget->setCurrentWidget(tableWidgetContainer);
+
+    qDebug() <<"moussssssssssa";
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 void Master::showSchedule() {
     QString level = filiereComboBox->currentText();
     emploits(level);  // Charger l'emploi du temps pour le niveau sélectionné
-    stackedWidget->setCurrentWidget(emploiPage);  // Basculer sur la page emploi du temps
+    //stackedWidget->setCurrentWidget(emploiPage);  // Basculer sur la page emploi du temps
+    //emploits(level);
 }
 
 
@@ -731,8 +837,17 @@ void Master::deleteStudent() {
 
 void Master::onComboBoxChanged() {
     QString level = filiereComboBox->currentText();
-    loadStudents(level);
+    QWidget *currentWidget = stackedWidget->currentWidget();
+
+    if (currentWidget == studentPage) {
+        loadStudents(level);
+    } else if (currentWidget == stagePage) {
+        loadStage(level);
+    } else {
+        emploits(level);
+    }
 }
+
 
 
 void Master::loadStudents(const QString& level) {

@@ -2,12 +2,15 @@
 #include "ui_cyclemanagement.h"
 #include "selectionwindow.h"
 #include "studentdialog.h"
+#include "database.h"
 #include <QLabel>
 #include <QMessageBox>
 #include <QInputDialog>
 #include <QFormLayout>  
 #include <QTextEdit>
 #include<QSqlError>
+#include <QHeaderView>
+
 
 cyclemanagement::cyclemanagement(QWidget *parent)
     : QMainWindow(parent)
@@ -162,28 +165,96 @@ void cyclemanagement::setupUI()
 
 void cyclemanagement::onScheduleButtonClicked()
 {
-    showSchedule(ui->levelComboBox->currentText());
-    ui->mainStack->setCurrentWidget(schedulePageWidget);
+    QString level = ui->levelComboBox->currentText();
+    showSchedule(level);
 }
 
-void cyclemanagement::showSchedule(const QString& level) // fonction d emploi
+
+void cyclemanagement::showSchedule(const QString& niveau)
 {
-    QString imagePath;
-    if (level == "LSI 1") {
-        imagePath = ":/assets/emplois1.png";
-    } else if (level == "LSI 2") {
-        imagePath = ":/assets/emplois3.png";
-    } else if (level == "LSI 3") {
-        imagePath = ":/assets/emplois5.png";
+    QWidget *tableWidgetContainer = new QWidget(this);
+    QVBoxLayout *layout = new QVBoxLayout(tableWidgetContainer);
+
+    QTableWidget *timeTable = new QTableWidget(this);
+    timeTable->setRowCount(6);
+    timeTable->setColumnCount(5);
+
+    timeTable->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+
+    QStringList plagesHoraires = {"09h00 - 10h30", "10h45 - 12h15", "12h30 - 14h00", "14h15 - 15h45", "16h00 - 17h30"};
+    timeTable->setHorizontalHeaderLabels(plagesHoraires);
+
+    QStringList jours = {"Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"};
+    timeTable->setVerticalHeaderLabels(jours);
+
+    timeTable->horizontalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+    timeTable->verticalHeader()->setSectionResizeMode(QHeaderView::Stretch);
+
+    QList<QStringList> donneesEmploiDuTemps;
+    Database db;
+
+    QString nomFichier = "/home/medgm/Desktop/Gestion_de_Departement_GI/E22.txt";
+    int indexJour = 0;
+    int indexPlageHoraire = 0;
+    if (db.readTimetableDataFromFile(nomFichier, donneesEmploiDuTemps, niveau)) {
+        for (int i = 0; i < donneesEmploiDuTemps.size(); ++i) {
+            QStringList champs = donneesEmploiDuTemps.at(i);
+
+            QString jour = champs.at(1).trimmed();
+            QString plageHoraire = champs.at(2).trimmed();
+            QString cours = champs.at(3).trimmed();
+            QString salle = champs.at(4).trimmed();
+
+            if (indexJour >= 6) {
+                indexJour = 0;
+            }
+
+            if (indexPlageHoraire >= 5) {
+                indexPlageHoraire = 0;
+                indexJour++;
+            }
+
+            if (!cours.isEmpty()) {
+                timeTable->setItem(indexJour, indexPlageHoraire, new QTableWidgetItem(cours + " (" + salle + ")"));
+            }
+
+            indexPlageHoraire++;
+        }
+    } else {
+        qDebug() << "Erreur : Impossible de charger les données de l'emploi du temps.";
     }
-    
-    QPixmap schedule(imagePath);
-    if (!schedule.isNull()) {
-        scheduleLabel->setPixmap(schedule.scaled(scheduleLabel->size(), 
-                                               Qt::KeepAspectRatio, 
-                                               Qt::SmoothTransformation));
-    }
+
+    timeTable->setStyleSheet("QTableWidget {"
+                             "background-color: #f9f9f9;"
+                             "border: 1px solid #ddd;"
+                             "border-radius: 8px;"
+                             "font-family: 'Arial', sans-serif;"
+                             "font-size: 11pt;"
+                             "width: 100%;"
+                             "alternate-background-color: #f2f2f2;} "
+                             "QTableWidget::item {"
+                             "padding: 4px;"
+                             "border: 1px solid #e2e2e2;"
+                             "background-color: #ffffff;} "
+                             "QTableWidget::item:selected {"
+                             "background-color: #3498db;"
+                             "color: white;} "
+                             "QHeaderView::section {"
+                             "background-color: #2980b9;"
+                             "color: white;"
+                             "padding: 12px;"
+                             "font-weight: bold;"
+                             "border: none;}");
+
+    layout->addWidget(timeTable);
+    tableWidgetContainer->setLayout(layout);
+
+    ui->mainStack->addWidget(tableWidgetContainer);
+    ui->mainStack->setCurrentWidget(tableWidgetContainer);
+
+    qDebug() <<"moussssssssssa";
 }
+
 
 void cyclemanagement::resizeEvent(QResizeEvent* event)
 {
@@ -198,14 +269,45 @@ void cyclemanagement::resizeEvent(QResizeEvent* event)
     }
 }
 
-void cyclemanagement::onLevelChanged(int index) // fonction qui gére le changement de niveau du filiere LSI
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+void cyclemanagement::onLevelChanged(int index)
 {
     QString level = ui->levelComboBox->currentText();
-    loadStudents(level);
-    if (ui->mainStack->currentWidget() == schedulePageWidget) {
+    QWidget *currentWidget = ui->mainStack->currentWidget();
+
+    if (currentWidget == pageWidget) {
+        loadStudents(level);
+    } else if (currentWidget == internshipsPageWidget) {
+        loadInternships();
+    } else {
         showSchedule(level);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 void cyclemanagement::onLogoutClicked() // fonction de button de logout
 {

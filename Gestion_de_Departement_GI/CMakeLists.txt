@@ -38,6 +38,8 @@ qt_add_executable(Gestion_de_Departement_GI
     assets/AISD1.png
 
 
+
+
 )
 
 target_link_libraries(Gestion_de_Departement_GI PRIVATE
