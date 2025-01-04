@@ -1,0 +1,9 @@
+C:/Qt/new/build/Desktop_Qt_6_5_8_MinGW_64_bit-Debug/CMakeFiles/Gestion_de_Departement_GI.dir
+C:/Qt/new/build/Desktop_Qt_6_5_8_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Qt/new/build/Desktop_Qt_6_5_8_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Qt/new/build/Desktop_Qt_6_5_8_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Qt/new/build/Desktop_Qt_6_5_8_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Qt/new/build/Desktop_Qt_6_5_8_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Qt/new/build/Desktop_Qt_6_5_8_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Qt/new/build/Desktop_Qt_6_5_8_MinGW_64_bit-Debug/CMakeFiles/Gestion_de_Departement_GI_autogen_timestamp_deps.dir
+C:/Qt/new/build/Desktop_Qt_6_5_8_MinGW_64_bit-Debug/CMakeFiles/Gestion_de_Departement_GI_autogen.dir
