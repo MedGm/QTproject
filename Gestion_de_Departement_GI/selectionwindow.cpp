@@ -15,13 +15,9 @@ SelectionWindow::SelectionWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setupIcons();
-<<<<<<< HEAD
 
 
 
-=======
-    
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
     connect(ui->engineerButton, &QPushButton::clicked, this, &SelectionWindow::onEngineerButtonClicked);
     connect(ui->professorsButton, &QPushButton::clicked, this, &SelectionWindow::onProfessorsButtonClicked);
     connect(ui->demandsButton, &QPushButton::clicked, this, &SelectionWindow::onDemandsButtonClicked);
@@ -42,26 +38,17 @@ SelectionWindow::~SelectionWindow()
 void SelectionWindow::setupIcons()
 {
     const int ICON_SIZE = 80;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
     auto setupButton = [this](QPushButton* button, const QString& iconPath) {
         QIcon icon(iconPath);
         QPixmap pixmap(ICON_SIZE, ICON_SIZE);
         pixmap.fill(Qt::transparent);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
         QPainter painter(&pixmap);
         painter.setRenderHint(QPainter::SmoothPixmapTransform);
         painter.drawPixmap(0, 0, icon.pixmap(ICON_SIZE, ICON_SIZE));
         painter.setCompositionMode(QPainter::CompositionMode_SourceIn);
         painter.fillRect(pixmap.rect(), Qt::white);
-<<<<<<< HEAD
 
         button->setIcon(QIcon(pixmap));
         button->setIconSize(QSize(ICON_SIZE, ICON_SIZE));
@@ -69,25 +56,12 @@ void SelectionWindow::setupIcons()
                               "QPushButton { text-align: center; padding-top: 40px; }"
                               "QPushButton::icon { margin-bottom: 20px; }"
                               );
-=======
-        
-        button->setIcon(QIcon(pixmap));
-        button->setIconSize(QSize(ICON_SIZE, ICON_SIZE));
-        button->setStyleSheet(button->styleSheet() + 
-            "QPushButton { text-align: center; padding-top: 40px; }"
-            "QPushButton::icon { margin-bottom: 20px; }"
-        );
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
     };
 
     setupButton(ui->masterButton, ":/assets/master.png");
     setupButton(ui->licenceButton, ":/assets/licence.png");
     setupButton(ui->engineerButton, ":/assets/cycle.png");
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
     for(auto button : {ui->masterButton, ui->licenceButton, ui->engineerButton}) {
         button->setFlat(true);
         QGraphicsDropShadowEffect* shadow = new QGraphicsDropShadowEffect(this);
@@ -98,22 +72,14 @@ void SelectionWindow::setupIcons()
     }
 }
 
-<<<<<<< HEAD
 void SelectionWindow::onEngineerButtonClicked()
-=======
-void SelectionWindow::onEngineerButtonClicked() //configuration de button de cycle d'ing
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 {
     cyclemanagement *cycleWindow = new cyclemanagement(this);
     cycleWindow->show();
     this->hide();
 }
 
-<<<<<<< HEAD
 void SelectionWindow::onProfessorsButtonClicked()
-=======
-void SelectionWindow::onProfessorsButtonClicked() //configuration de button de professeur
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 {
     if (!professorsWindow) {
         professorsWindow = new ProfessorsWindow(this);
@@ -121,11 +87,7 @@ void SelectionWindow::onProfessorsButtonClicked() //configuration de button de p
     professorsWindow->show();
 }
 
-<<<<<<< HEAD
 void SelectionWindow::onDemandsButtonClicked()
-=======
-void SelectionWindow::onDemandsButtonClicked() //configuration de button des demandes
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 {
     if (!demandsWindow) {
         demandsWindow = new DemandsWindow(this);
@@ -141,10 +103,7 @@ void SelectionWindow::onReservationsButtonClicked()
     reservationsWindow->show();
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 void SelectionWindow::onLicenceButtonClicked(){
     licence *licencew = new licence(this);
     licencew->show();

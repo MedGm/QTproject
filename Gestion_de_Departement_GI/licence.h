@@ -44,10 +44,7 @@ private slots:
 
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 private:
     QLineEdit *nameEdit, *surnameEdit, *cneEdit, *emailEdit, *phoneEdit, *dobEdit, *specialtyEdit;
     QComboBox *levelComboBoxStudents, *levelComboBoxStages, *levelComboBoxTimetable;

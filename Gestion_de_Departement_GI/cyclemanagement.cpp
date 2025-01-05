@@ -2,21 +2,15 @@
 #include "ui_cyclemanagement.h"
 #include "selectionwindow.h"
 #include "studentdialog.h"
-<<<<<<< HEAD
 #include "database.h"
-=======
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 #include <QLabel>
 #include <QMessageBox>
 #include <QInputDialog>
 #include <QFormLayout>  
 #include <QTextEdit>
 #include<QSqlError>
-<<<<<<< HEAD
 #include <QHeaderView>
 
-=======
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 
 cyclemanagement::cyclemanagement(QWidget *parent)
     : QMainWindow(parent)
@@ -28,16 +22,7 @@ cyclemanagement::cyclemanagement(QWidget *parent)
     setupUI();
     
     // Set window properties for fullscreen
-    this->setWindowState(Qt::WindowFullScreen);
-    this->setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
-    
-    // Add ESC key shortcut to exit fullscreen
-    QShortcut* shortcut = new QShortcut(QKeySequence(Qt::Key_Escape), this);
-    connect(shortcut, &QShortcut::activated, [this]() {
-        if (this->isFullScreen()) {
-            this->showNormal();
-        }
-    });
+    //
 
     // Connect other signals
     connect(ui->levelComboBox, QOverload<int>::of(&QComboBox::currentIndexChanged),
@@ -171,7 +156,6 @@ void cyclemanagement::setupUI()
 
 void cyclemanagement::onScheduleButtonClicked()
 {
-<<<<<<< HEAD
     QString level = ui->levelComboBox->currentText();
     showSchedule(level);
 }
@@ -263,31 +247,6 @@ void cyclemanagement::showSchedule(const QString& niveau)
 }
 
 
-=======
-    showSchedule(ui->levelComboBox->currentText());
-    ui->mainStack->setCurrentWidget(schedulePageWidget);
-}
-
-void cyclemanagement::showSchedule(const QString& level) // fonction d emploi
-{
-    QString imagePath;
-    if (level == "LSI 1") {
-        imagePath = ":/assets/emplois1.png";
-    } else if (level == "LSI 2") {
-        imagePath = ":/assets/emplois3.png";
-    } else if (level == "LSI 3") {
-        imagePath = ":/assets/emplois5.png";
-    }
-    
-    QPixmap schedule(imagePath);
-    if (!schedule.isNull()) {
-        scheduleLabel->setPixmap(schedule.scaled(scheduleLabel->size(), 
-                                               Qt::KeepAspectRatio, 
-                                               Qt::SmoothTransformation));
-    }
-}
-
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 void cyclemanagement::resizeEvent(QResizeEvent* event)
 {
     QMainWindow::resizeEvent(event);
@@ -301,7 +260,6 @@ void cyclemanagement::resizeEvent(QResizeEvent* event)
     }
 }
 
-<<<<<<< HEAD
 
 
 
@@ -327,18 +285,10 @@ void cyclemanagement::onLevelChanged(int index)
     } else if (currentWidget == internshipsPageWidget) {
         loadInternships();
     } else {
-=======
-void cyclemanagement::onLevelChanged(int index) // fonction qui gére le changement de niveau du filiere LSI
-{
-    QString level = ui->levelComboBox->currentText();
-    loadStudents(level);
-    if (ui->mainStack->currentWidget() == schedulePageWidget) {
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
         showSchedule(level);
     }
 }
 
-<<<<<<< HEAD
 
 
 
@@ -350,8 +300,6 @@ void cyclemanagement::onLevelChanged(int index) // fonction qui gére le changem
 
 
 
-=======
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 void cyclemanagement::onLogoutClicked() // fonction de button de logout
 {
     SelectionWindow *selectionWindow = new SelectionWindow();
@@ -401,6 +349,30 @@ void cyclemanagement::loadStudents(const QString& level) // charger les etudiant
 void cyclemanagement::onAddStudentClicked()
 {
     StudentDialog dialog(this);
+    dialog.setStyleSheet(
+        "QDialog {"
+        "    background-color: #2980b9;"
+        "    color: white;"
+        "}"
+        "QLabel {"
+        "    color: white;"
+        "}"
+        "QLineEdit {"
+        "    background-color: white;"
+        "    padding: 5px;"
+        "    border-radius: 3px;"
+        "}"
+        "QPushButton {"
+        "    background-color: white;"
+        "    color: #2980b9;"
+        "    border: none;"
+        "    padding: 5px 15px;"
+        "    border-radius: 3px;"
+        "}"
+        "QPushButton:hover {"
+        "    background-color: #f0f0f0;"
+        "}"
+    );
     if (dialog.exec() == QDialog::Accepted) {
         QString level = ui->levelComboBox->currentText().remove(" ");
         DatabaseManager::instance().addStudent(level, dialog.getName(),
@@ -581,6 +553,32 @@ void cyclemanagement::onAddInternshipClicked()
 {
     QDialog dialog(this);
     dialog.setWindowTitle("Ajouter Stage");
+    
+    // Add dialog styling
+    dialog.setStyleSheet(
+        "QDialog {"
+        "    background-color: #2980b9;"
+        "    color: white;"
+        "}"
+        "QLabel {"
+        "    color: white;"
+        "}"
+        "QLineEdit, QTextEdit {"
+        "    background-color: white;"
+        "    padding: 5px;"
+        "    border-radius: 3px;"
+        "}"
+        "QPushButton {"
+        "    background-color: white;"
+        "    color: #2980b9;"
+        "    border: none;"
+        "    padding: 5px 15px;"
+        "    border-radius: 3px;"
+        "}"
+        "QPushButton:hover {"
+        "    background-color: #f0f0f0;"
+        "}"
+    );
 
     QLineEdit* nameEdit = new QLineEdit(&dialog); 
     QLineEdit* cneEdit = new QLineEdit(&dialog);

@@ -1,0 +1,37 @@
+{
+	"BUILD_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI/cmake-build-debug/Gestion_de_Departement_GI_autogen",
+	"CMAKE_BINARY_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI",
+	"CMAKE_SOURCE_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "/home/medgm/Desktop/Gestion_de_Departement_GI/cmake-build-debug/Gestion_de_Departement_GI_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/licence.png",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/emplois1.png",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/etidai.png",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/etad.png",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/padlock.png",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/fst.jpeg",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/user.png",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/emplois5.png",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/cycle.png",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/emplois3.png",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/log-uae.png",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/useradminlogo.png",
+		"/home/medgm/Desktop/Gestion_de_Departement_GI/assets/master.png"
+	],
+	"LOCK_FILE" : "/home/medgm/Desktop/Gestion_de_Departement_GI/cmake-build-debug/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutoRcc_assets_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "assets" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_assets.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/medgm/Desktop/Gestion_de_Departement_GI/cmake-build-debug/CMakeFiles/Gestion_de_Departement_GI_autogen.dir/AutoRcc_assets_EWIEGA46WW_Used.txt",
+	"SOURCE" : "/home/medgm/Desktop/Gestion_de_Departement_GI/assets.qrc",
+	"USE_BETTER_GRAPH" : false,
+	"VERBOSITY" : 0
+}

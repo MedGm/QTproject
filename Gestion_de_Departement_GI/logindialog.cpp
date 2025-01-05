@@ -76,11 +76,7 @@ void LoginDialog::on_loginButton_clicked()
     ui->errorLabel->setVisible(false);
     
     // username w password dyal admin
-<<<<<<< HEAD
     if (username == "" && password == "") {
-=======
-    if (username == "admin" && password == "admin") {
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
         accept();
     } else {
         ui->errorLabel->setVisible(true);  // message d erreur
