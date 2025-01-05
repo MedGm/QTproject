@@ -24,13 +24,10 @@ public:
     bool removeReservation(int id);
     QSqlDatabase getDatabase() const;
     int getInternshipId(const QString& studentCne, const QString& company);
-<<<<<<< HEAD
     bool initializeLSI1Data();
     bool initializeLSI2Data();
     bool initializeLSI3Data();
     bool initializeProfessorsData();
-=======
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
 
 private:
     DatabaseManager();

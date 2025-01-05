@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Département Génie Informatique</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-image: url(:/assets/fst.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+QWidget#centralwidget {
+    background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1,
+                               stop:0 rgba(0, 123, 255, 0.35),
+                               stop:1 rgba(0, 123, 255, 0.3));
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>40</number>
+    </property>
+    <property name="leftMargin">
+     <number>60</number>
+    </property>
+    <property name="rightMargin">
+     <number>60</number>
+    </property>
+    <item>
+     <widget class="QLabel" name="headerLabel">
+      <property name="styleSheet">
+       <string notr="true">QLabel#headerLabel {
+    color: #2980b9;
+    font-size: 34px;
+    font-weight: bold;
+    padding: 20px 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    border-left: 8px solid #3498db;
+    margin: 10px;
+    font-family: 'Segoe UI', Arial;
+    letter-spacing: 1px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Département Génie Informatique</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="welcomeLabel">
+      <property name="styleSheet">
+       <string notr="true">QLabel#welcomeLabel {
+    color: white;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 15px;
+    background-color: rgba(41, 128, 185, 0.7);
+    border-radius: 10px;
+    margin: 10px;
+    font-family: 'Segoe UI', Arial;
+    letter-spacing: 0.5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Bienvenue au département de Génie Informatique. 
+Veuillez vous connecter pour accéder à l'interface d'administration.</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <spacer name="topSpacer">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>100</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="Adminbutton">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton#Adminbutton {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+    font-family: "Roboto",sans-serif;
+    letter-spacing: 0.5px;
+    text-align: left;
+}</string>
+        </property>
+        <property name="text">
+         <string>  Connecter comme Admin</string>
+        </property>
+        <property name="icon">
+         <iconset resource="assets.qrc">
+          <normaloff>:/assets/user.png</normaloff>:/assets/user.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <spacer name="bottomSpacer">
+      <property name="orientation">
+       <enum>Qt::Orientation::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>150</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -39,11 +39,7 @@ private slots:
     void onAddStudentClicked();
     void onDeleteStudentClicked();
     void onScheduleButtonClicked();
-<<<<<<< HEAD
     void showSchedule(const QString& niveau);
-=======
-    void showSchedule(const QString& level);
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
     void onStudentsButtonClicked();
     void onInternshipsButtonClicked();
     void onAddInternshipClicked();
@@ -63,10 +59,7 @@ private:
     QWidget* schedulePageWidget;
     QWidget* internshipsPageWidget;
     QTableWidget* internshipsTable;
-<<<<<<< HEAD
     QStackedWidget *stackedWidget;
-=======
->>>>>>> f268020af7b1cd3edf11540eb97593cc035a9241
     void setupInternshipsTable();
 };
 

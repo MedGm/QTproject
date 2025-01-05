@@ -1,0 +1,5 @@
+/home/medgm/Downloads/CLion-2024.3.1.1/clion-2024.3.1.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/medgm/Downloads/CLion-2024.3.1.1/clion-2024.3.1.1/bin/ninja/linux/x64/ninja -G Ninja -S /home/medgm/Desktop/Gestion_de_Departement_GI -B /home/medgm/Desktop/Gestion_de_Departement_GI/cmake-build-debug
+-- Could NOT find XKB (missing: XKB_LIBRARY XKB_INCLUDE_DIR) (Required is at least version "0.5.0")
+-- Configuring done (1.0s)
+-- Generating done (0.3s)
+-- Build files have been written to: /home/medgm/Desktop/Gestion_de_Departement_GI/cmake-build-debug
