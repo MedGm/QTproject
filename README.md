@@ -32,26 +32,17 @@ Application de gestion administrative du département Génie Informatique dével
 
 ### 🔐 Système d'Authentification
 - Interface de connexion sécurisée
-- Validation des identifiants
 - Gestion des erreurs de connexion
 
 ### 👨‍🏫 Gestion des Professeurs
 - Vue d'ensemble des enseignants
 - Détails des spécialités
-- Interface CRUD complète
-- Filtrage par département/spécialité
 
 ### 📅 Système de Réservation
-- Calendrier interactif
-- Vérification des disponibilités
-- Gestion des conflits
-- Historique des réservations
+- Gestion des conflit
 
 ### 📝 Gestion des Demandes Administratives
-- Soumission de demandes
-- Suivi du statut
 - Téléchargement de documents
-- Notifications de mise à jour
 
 ### 👨‍🎓 Gestion des Étudiants
 #### Cycles Académiques Supportés
@@ -60,7 +51,7 @@ Application de gestion administrative du département Génie Informatique dével
 - **Master**
 
 #### Fonctionnalités
-- Gestion des inscriptions
+- Gestion des listes
 - Suivi académique
 - Gestion des stages
 - Emplois du temps personnalisés
@@ -72,10 +63,8 @@ Application de gestion administrative du département Génie Informatique dével
 - Historique des stages
 
 ### ⏰ Emploi du Temps
-- Création dynamique
 - Personnalisation par cycle/spécialité
 - Gestion des conflits
-- Export en plusieurs formats
 
 ## 🚀 Installation
 
